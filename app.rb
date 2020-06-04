@@ -13,3 +13,7 @@ post '/confirm' do
    erb:confirmation_view
 end
 
+get '/menuStarGame' do
+  "Hello World"
+  erb:menuprincipal_view
+end
