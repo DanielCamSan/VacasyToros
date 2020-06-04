@@ -6,7 +6,8 @@ require './lib/Game.rb'
 
 
 get '/' do
-    erb:home_view
+  
+  erb:home_view
 end
 get '/login' do
     erb:login_view
@@ -35,18 +36,20 @@ post '/enterNumber' do
   @codigo = @@juego.getCode()
   if(@result == (@@juego.sizeOfCode()+" toros y 0 vacas"))
     erb:winner_view
+    @@juego.setIntentos(10)  
   else
     if(@intentos == 0)
       erb:losser_view
+      @@juego.setIntentos(10)  
     else
       erb:response_view
     end      
   end
 end
 
-
 get '/game' do
-  erb:game_view
+  
+  
 end
 
 get '/game2' do
