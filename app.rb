@@ -1,5 +1,9 @@
 require 'sinatra'
 require './lib/User.rb'
+require './lib/Game.rb'
+
+@juego=Game.new()
+
 get '/' do
     erb:home_view
   end
@@ -14,6 +18,17 @@ post '/confirm' do
 end
 
 get '/menuStarGame' do
-  "Hello World"
   erb:menuprincipal_view
 end
+
+post '/enterCodigo' do
+  @codigo = params[:codigo]
+  @juego.setCode(@codigo)
+  @maxlength = @juego.getCode().size.to_s
+  erb:game_view
+end
+
+get '/enterNumber' do
+  
+end
+
