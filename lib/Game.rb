@@ -22,8 +22,13 @@ class Game
         return @codigo
     end
 
+
     def setCode(numbercodigo)
         @codigo = numbercodigo
+    end
+
+    def sizeOfCode()
+        return ((@codigo.to_s).size).to_s
     end
     
     def play(num) 
@@ -44,6 +49,9 @@ class Game
 
     def validateNumbers(num)
         code = getCode().to_s
+        if (num.to_s.size==0)
+            return "No puede ser vacio el numero" 
+        end        
         if ( ((num.to_i).to_s.size == num.to_s.size) && ((code.to_i).to_s.size == code.size) )
             if ( (num.to_i).to_s.size == (code.to_i).to_s.size )
                 return play(num)

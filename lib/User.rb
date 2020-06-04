@@ -6,11 +6,14 @@ class User
     def getName()
         return @name
     end
-    
-    def seleccionTipo(tipo)
-        @tipo=tipo
+    def setTipo(tipo=1)
+       @tipo=tipo
+    end
+    def getTipo()
+        return @tipo
     end
 
+   
 end
 
 

@@ -80,4 +80,20 @@ RSpec.describe "Creacion" do
         @juego.play(129)
         expect(@juego.getIntentos).to eq(14)
     end
+    it 'devuelve la cantidad de digitos del codigo por defecto' do
+        @juego=Game.new()
+        expect(@juego.sizeOfCode()).to eq("4")
+    end
+    it 'devuelve la cantidad de digitos del codigo' do
+        @juego=Game.new()
+        @juego.setCode(129)
+        expect(@juego.sizeOfCode()).to eq("3")
+    end
+    it 'devuelve el tipo de jugador que es' do
+        @user=User.new()
+        @user.setTipo(1)
+        expect(@user.getTipo()).to eq(1)
+    end
+    
+
 end
