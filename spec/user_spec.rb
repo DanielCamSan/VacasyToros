@@ -100,4 +100,18 @@ RSpec.describe "Creacion" do
         @user.setNickname("NickName")
         expect(@user.getName()).to eq("NickName")
     end
+
+
+
+
+    it'devolver numero de intento establecidos en este caso 15' do 
+        @juego=Game.new()
+        @juego.setIntentos(15)
+        expect(@juego.getIntentos()).to eq(15)
+    end
+
+    it'devolver email por defecto' do 
+        @juego=User.new()
+        expect(@juego.getEmail()).to eq("")
+    end
 end

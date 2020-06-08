@@ -10,6 +10,14 @@ class Game
         return @intentos
     end
 
+    
+    def setRandomCode()
+        @numRand=(rand(9)+1)*1+(rand(9)+1)*10+(rand(9)+1)*100+(rand(9)+1)*1000
+        @codigo=@numRand
+    end
+    
+
+    
     def setIntentos(numeroIntentos)
         @intentos = numeroIntentos
     end
@@ -61,5 +69,13 @@ class Game
         else
             return "El codigo no deberia tener letras"
         end    
+    end
+
+
+
+
+    def Rendirse()
+        numeroIntentos=0
+        #direcciona a 
     end
 end
