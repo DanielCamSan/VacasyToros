@@ -95,5 +95,9 @@ RSpec.describe "Creacion" do
         expect(@user.getTipo()).to eq(1)
     end
     
-
+    it 'devuelve el nickname que se le creo' do
+        @user=User.new()
+        @user.setNickname("NickName")
+        expect(@user.getName()).to eq("NickName")
+    end
 end

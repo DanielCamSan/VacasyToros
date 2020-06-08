@@ -3,6 +3,9 @@ class User
         @name=name#+(rand(100)).to_s
     end
 
+    def setNickname(name)
+        @name=name
+    end
     def getName()
         return @name
     end
