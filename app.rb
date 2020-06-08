@@ -36,13 +36,21 @@ post '/confirm-cuenta' do
   erb:login_view
 end
 
-get '/SelectType' do
-  erb:SeleccionType_view
-end
+
 
 
 get '/menuStarGame' do
+  erb:SeleccionType_view
+end
+
+get '/SelectType1' do
   erb:menuprincipal_view
+  
+end
+
+get '/SelectType2' do
+  erb:game_view
+  
 end
 
 post '/enterCodigo' do
@@ -57,12 +65,14 @@ post '/enterNumber' do
   @intentosString=@intentos.to_s
   @codigo = @@juego.getCode()
   if(@result == (@@juego.sizeOfCode()+" toros y 0 vacas"))
+    @@juego.setIntentos(10)
     erb:winner_view
-    @@juego.setIntentos(10)  
+      
   else
     if(@intentos == 0)
+      @@juego.setIntentos(10)
       erb:losser_view
-      @@juego.setIntentos(10)  
+        
     else
       erb:response_view
     end      
@@ -70,7 +80,7 @@ post '/enterNumber' do
 end
 
 get '/game' do
-  erb:login_view
+  erb:game_view
 end
 
 get '/game2' do
