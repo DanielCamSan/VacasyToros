@@ -3,6 +3,7 @@ require './lib/User.rb'
 require './lib/Game.rb'
 
 @@juego=Game.new()
+@@user = User.new()
 
 
 get '/' do
@@ -21,19 +22,23 @@ get '/login-cuenta' do
 end
 
 
-
 post '/confirm' do
-   @user=User.new(params[:name])
-   @name=params[:name]
-   @nickName = @user.getName()
+   @@user.setName(params[:name])
+   @name=@@user.getName()
+   @@user.setNickname(params[:nickname])
+   @nickName = @@user.getNickname()
    erb:confirmation_view
 end
 
 post '/confirm-cuenta' do
-  @user=User.new("",params[:email],params[:password])
+  @@user.setEmail(params[:email])
+  @@user.setPassword(params[:password])
   erb:login_view
 end
 
+get '/SelectType' do
+  erb:SeleccionType_view
+end
 
 
 get '/menuStarGame' do
