@@ -1,16 +1,16 @@
-require 'User.rb'
+require './lib/User.rb'
 require 'Game.rb'
 RSpec.describe "Creacion" do
     it 'devuelve un nombre un nombre por defecto si se creo correctamente sin indicar el nombre' do
         @user=User.new
-        expect(@user.getName()).to eq("Guest")
+        expect(@user.getName()).to eq("")
     end
     it 'ectamente sin indicar el nombre' do
         @user=User.new("")
         expect(@user.getName()).to eq("")
     end
     it 'devuelve nombre que ingresa ' do
-        @user=User.new('JUAN')
+        @user=User.new("JUAN")
         expect(@user.getName()).to eq('JUAN')
     end
     it 'devuelve el codigo para ver que se ingreso correctamente' do
@@ -31,7 +31,7 @@ RSpec.describe "Creacion" do
         @juego.setCode(123)
         expect(@juego.play(567)).to eq("0 toros y 0 vacas")
     end
-    it 'devuelve 3vacas' do
+    it 'devuelve 3 Vacas' do
         @user=User.new("Juan")
         @juego=Game.new(@user)
         @juego.setCode(123)
@@ -98,11 +98,8 @@ RSpec.describe "Creacion" do
     it 'devuelve el nickname que se le creo' do
         @user=User.new()
         @user.setNickname("NickName")
-        expect(@user.getName()).to eq("NickName")
+        expect(@user.getNickname()).to eq("NickName")
     end
-
-
-
 
     it'devolver numero de intento establecidos en este caso 15' do 
         @juego=Game.new()
@@ -111,7 +108,24 @@ RSpec.describe "Creacion" do
     end
 
     it'devolver email por defecto' do 
-        @juego=User.new()
-        expect(@juego.getEmail()).to eq("")
+        @user=User.new()
+        expect(@user.getEmail()).to eq("")
     end
+
+    it'devolver email prueba@hotmail.com' do 
+        @user=User.new()
+        @user.setEmail("prueba@hotmail.com")
+        expect(@user.getEmail()).to eq("prueba@hotmail.com")
+    end
+
+    it'devolver password por defecto' do 
+        @user=User.new()
+        expect(@user.getPassword()).to eq("")
+    end
+    it'devolver password  prueba123' do 
+        @user=User.new()
+        @user.setPassword("prueba123")
+        expect(@user.getPassword()).to eq("prueba123")
+    end
+    
 end
