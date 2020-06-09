@@ -15,6 +15,10 @@ class Game
         @numRand=(rand(9).to_i+1)*1+(rand(9).to_i+1)*10+(rand(9).to_i+1)*100+(rand(9).to_i+1)*1000
         @codigo=@numRand.to_i
     end
+
+    def getInvitationCode()
+        return ((rand(9).to_i+1)*1+(rand(9).to_i+1)*10+(rand(9).to_i+1)*100+(rand(9).to_i+1)*1000).to_s        
+    end
     
 
     

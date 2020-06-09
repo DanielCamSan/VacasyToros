@@ -34,6 +34,10 @@ post '/confirm-cuenta' do
   erb:login_view
 end
 
+get '/codeInvitePeople' do
+  @code=(@@juego.getInvitationCode())
+  erb:invitation_view
+end
 
 
 
