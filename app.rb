@@ -10,8 +10,6 @@ get '/' do
   erb:home_view
 end
 
-
-
 get '/login' do
     erb:login_view
 end
@@ -56,7 +54,7 @@ end
 post '/enterCodigo' do
   @codigo = params[:codigo]
   @@juego.setCode(@codigo)
-  erb:game_view
+  erb:dificultad_view
 end
 
 post '/enterNumber' do
@@ -79,10 +77,28 @@ post '/enterNumber' do
   end
 end
 
+post '/Randomizar' do
+  @@juego.setRandomCode()
+  erb:dificultad_view
+end
+post '/difficulty' do
+  @trie = params[:tries]
+  @@juego.setIntentos(@trie)
+  erb:game_view
+
+end
+
+post '/giveup' do
+  @@juego.rendirse()
+  @codigo = @@juego.getCode()
+  erb:losser_view
+end
 get '/game' do
+  
   erb:game_view
 end
 
 get '/game2' do
+  @@juego.setIntentos(10)
   erb:login_view
 end

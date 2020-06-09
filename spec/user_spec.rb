@@ -127,5 +127,11 @@ RSpec.describe "Creacion" do
         @user.setPassword("prueba123")
         expect(@user.getPassword()).to eq("prueba123")
     end
+    it 'devolver password aleatoria' do
+        @user=User.new("Juan")
+        @juego=Game.new(@user)
+        @juego.setRandomCode()
+        expect(@juego.sizeOfCode()).to eq("4")
+    end
     
 end

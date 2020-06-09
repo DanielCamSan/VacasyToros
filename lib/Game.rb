@@ -12,14 +12,16 @@ class Game
 
     
     def setRandomCode()
-        @numRand=(rand(9)+1)*1+(rand(9)+1)*10+(rand(9)+1)*100+(rand(9)+1)*1000
-        @codigo=@numRand
+        @numRand=(rand(9).to_i+1)*1+(rand(9).to_i+1)*10+(rand(9).to_i+1)*100+(rand(9).to_i+1)*1000
+        @codigo=@numRand.to_i
     end
     
 
     
     def setIntentos(numeroIntentos)
-        @intentos = numeroIntentos
+        if(numeroIntentos!="")
+            @intentos = numeroIntentos.to_i
+        end    
     end
 
     def descontarIntentos()
@@ -32,7 +34,9 @@ class Game
 
 
     def setCode(numbercodigo)
-        @codigo = numbercodigo
+        if(numbercodigo!="")
+            @codigo = numbercodigo
+        end
     end
 
     def sizeOfCode()
@@ -74,8 +78,8 @@ class Game
 
 
 
-    def Rendirse()
-        numeroIntentos=0
-        #direcciona a 
+    def rendirse()
+        @intentos=0
+        
     end
 end
