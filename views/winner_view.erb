@@ -7,14 +7,16 @@
     <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
     <title>Home</title>
 </head>
-<div>
-    <h1><span style="font-size: 250%; background-color: #008000; color: #ffffff; padding: 0 3px; font">¡GANASTE!</span>
-    </h1>
-    <h2>Codigo:<span style="font-size: 100%; background-color: #000000; color: #ffffff; padding: 0 3px; font"><%=@codigo%></span>
-    </h2>
-    <h2>Numero de intentos restantes:<span style="font-size: 100%; background-color: #000000; color: #ffffff; padding: 0 3px; font"><%=@intentos%></span>
-    </h2>
-    <form action="game2">
-    <input type="submit" value="Volver a intentar" />
-    </form>
-</div>
+<body class="alert alert-primary" role="alert">
+    <div>
+        <h1><span style="font-size: 250%; background-color: #008000; color: #ffffff; padding: 0 3px; font">¡GANASTE!</span>
+        </h1>
+        <h2 class="text-primary">Codigo:<span style="font-size: 100%; background-color: #000000; color: #ffffff; padding: 0 3px; font"><%=@codigo%></span>
+        </h2>
+        <h2 class="text-primary">Numero de intentos restantes:<span style="font-size: 100%; background-color: #000000; color: #ffffff; padding: 0 3px; font"><%=@intentos%></span>
+        </h2>
+        <form action="game2">
+        <input type="submit" class="btn btn-warning" value="Volver a intentar" />
+        </form>
+    </div>
+</body>
