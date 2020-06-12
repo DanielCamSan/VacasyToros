@@ -5,6 +5,8 @@ require './lib/Game.rb'
 @@juego=Game.new()
 @@user = User.new()
 
+@@dif=0
+
 
 get '/' do
   erb:home_view
@@ -46,7 +48,7 @@ get '/menuStarGame' do
 end
 
 get '/SelectType1' do
-  erb:menuprincipal_view
+  erb:codeDificulty_view
   
 end
 
@@ -57,6 +59,16 @@ end
 
 post '/enterCodigo' do
   @codigo = params[:codigo]
+  @@juego.setCode(@codigo)
+  erb:dificultad_view
+end
+
+post '/enterCodigoPer' do
+  @codigo = params[:codigo]
+  @codigoS=@codigo.to_s
+  if(@codigoS.size!=@@dif)
+    erb:errorSize_view
+  end
   @@juego.setCode(@codigo)
   erb:dificultad_view
 end
@@ -85,10 +97,45 @@ post '/Randomizar' do
   @@juego.setRandomCode()
   erb:dificultad_view
 end
+
+post '/RandomizarPer' do
+  if(@@dif==4)
+    @@juego.setRandomCode()
+  else
+    if(@@dif==6)
+      @@juego.setRandomCodeSix()
+    else
+      @@juego.setRandomCodeEight()
+    end
+  end
+  erb:dificultad_view
+end
+
+post '/codeDificulty4' do
+  @@dif=4
+  @codeDif=@@dif.to_s
+  erb:DifficultySelection_view
+end
+post '/codeDificulty6' do
+  @@dif=6
+  @codeDif=@@dif.to_s
+  erb:DifficultySelection_view
+end
+post '/codeDificulty8' do
+  @@dif=8
+  @codeDif=@@dif.to_s
+  erb:DifficultySelection_view
+end
+post '/codeDificultyPer' do
+  erb:menuprincipal_view
+end
+
 post '/difficulty' do
   @trie = params[:tries]
   @@juego.setIntentos(@trie)
+  @@dif=0
   erb:game_view
+  
 
 end
 

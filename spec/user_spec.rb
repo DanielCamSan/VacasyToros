@@ -133,5 +133,10 @@ RSpec.describe "Creacion" do
         @juego.setRandomCode()
         expect(@juego.sizeOfCode()).to eq("4")
     end
-    
+    it 'devolver resouesta metodo' do
+        @user=User.new("Juan")
+        @juego=Game.new(@user,15,187)
+        @pal=@juego.play(129)
+        expect(@pal).to eq(1)
+    end
 end

@@ -9,18 +9,32 @@ class Game
     def getIntentos()
         return @intentos
     end
-
-    
+ 
     def setRandomCode()
         @numRand=(rand(9).to_i+1)*1+(rand(9).to_i+1)*10+(rand(9).to_i+1)*100+(rand(9).to_i+1)*1000
         @codigo=@numRand.to_i
     end
-
+    def setRandomCodeSix()
+        @numRand=(rand(9).to_i+1)*1+(rand(9).to_i+1)*10+(rand(9).to_i+1)*100+(rand(9).to_i+1)*1000+(rand(9).to_i+1)*10000+(rand(9).to_i+1)*100000
+        @codigo=@numRand.to_i
+    end
+    def setRandomCodeEight()
+        @numRand=(rand(9).to_i+1)*1+(rand(9).to_i+1)*10+(rand(9).to_i+1)*100+(rand(9).to_i+1)*1000+(rand(9).to_i+1)*10000+(rand(9).to_i+1)*100000+(rand(9).to_i+1)*1000000+(rand(9).to_i+1)*10000000
+        @codigo=@numRand.to_i
+    end
+    
     def getInvitationCode()
         return ((rand(9).to_i+1)*1+(rand(9).to_i+1)*10+(rand(9).to_i+1)*100+(rand(9).to_i+1)*1000).to_s        
     end
     
-
+    def sameSize(num1,num2)
+        #devuelve true si es el mismo tamaño y false si no es
+        @aux=false
+        if(num1.to_s.size == num2.to_s.size)
+            @aux=true
+        end
+        return @aux
+    end
     
     def setIntentos(numeroIntentos)
         if(numeroIntentos!="")
@@ -46,7 +60,7 @@ class Game
     def sizeOfCode()
         return ((@codigo.to_s).size).to_s
     end
-    
+ 
     def play(num) 
         code = getCode().to_s
         toros = 0
@@ -55,13 +69,16 @@ class Game
         for i in (0...code.size) do
             if  (num[i] == code[i])
                 toros += 1
-            elsif ( code.include? num[i])
-                vacas += 1
+            else
+                if ( code.include?(num[i]))
+                    vacas += 1
+                end
             end 
         end
         descontarIntentos()
         return "#{toros} toros y #{vacas} vacas"        
     end
+
 
     def validateNumbers(num)
         code = getCode().to_s
@@ -78,12 +95,72 @@ class Game
             return "El codigo no deberia tener letras"
         end    
     end
-
-
-
-
     def rendirse()
         @intentos=0
-        
     end
+
+
+
+    def setCodeColors(colorCode)
+        #1:R-Red     2:Y-Yellow   3:B-Blue     4:G-Green  5:W-White
+        #6:P-Purple  7:O-Orange   8:F-Fuchsia  9:S-Silver 0:L-Lime
+        colorCode=colorCode.to_s
+        cod=""
+        for i in (0...colorCode.size-1) do
+            case colorCode[i]
+                when "R"
+                    cod=cod+"1"
+                when "Y"
+                    cod=cod+"2"
+                when "B"
+                    cod=cod+"3"
+                when "G"
+                    cod=cod+"4"
+                when "W"
+                    cod=cod+"5"
+                when "P"
+                    cod=cod+"6"
+                when "O"
+                    cod=cod+"7"
+                when "F"
+                    cod=cod+"8"
+                when "S"
+                    cod=cod+"9"
+                when "L"
+                    cod=cod+"0"
+            end 
+        end
+    end
+    def getCodeColors(colorCode)
+        #1:R-Red     2:Y-Yellow   3:B-Blue     4:G-Green  5:W-White
+        #6:P-Purple  7:O-Orange   8:F-Fuchsia  9:S-Silver 0:L-Lime
+        colorCode=colorCode.to_s
+        cod=""
+        for i in (0...colorCode.size-1) do
+            case colorCode[i]
+                when "1"
+                    cod=cod+"R"
+                when "2"
+                    cod=cod+"Y"
+                when "3"
+                    cod=cod+"B"
+                when "4"
+                    cod=cod+"G"
+                when "5"
+                    cod=cod+"W"
+                when "6"
+                    cod=cod+"P"
+                when "7"
+                    cod=cod+"O"
+                when "8"
+                    cod=cod+"F"
+                when "S"
+                    cod=cod+"9"
+                when "L"
+                    cod=cod+"0"
+            end 
+        end
+    end
+
+
 end
