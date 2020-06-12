@@ -90,6 +90,13 @@ RSpec.describe "Creacion" do
         @juego.play(129)
         expect(@juego.getIntentos).to eq(14)
     end
+
+    it 'devuelve 0 intentos tras rendirse' do
+        @juego=Game.new()
+        @juego.setIntentos(16)
+        @juego.rendirse()
+        expect(@juego.getIntentos()).to eq(0)
+    end
     it 'devuelve la cantidad de digitos del codigo por defecto' do
         @juego=Game.new()
         expect(@juego.sizeOfCode()).to eq("4")
@@ -104,6 +111,7 @@ RSpec.describe "Creacion" do
         @user.setTipo(1)
         expect(@user.getTipo()).to eq(1)
     end
+
     
     it 'devuelve el nickname que se le creo' do
         @user=User.new()
