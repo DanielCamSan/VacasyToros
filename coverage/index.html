@@ -5,7 +5,7 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <script src='./assets/0.12.2/application.js' type='text/javascript'></script>
     <link href='./assets/0.12.2/application.css' media='screen, projection, print' rel='stylesheet' type='text/css' />
-    <link rel="shortcut icon" type="image/png" href="./assets/0.12.2/favicon_green.png" />
+    <link rel="shortcut icon" type="image/png" href="./assets/0.12.2/favicon_yellow.png" />
     <link rel="icon" type="image/png" href="./assets/0.12.2/favicon.png" />
   </head>
 
@@ -14,7 +14,7 @@
       <img src="./assets/0.12.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2020-06-12T08:43:33-05:00">2020-06-12T08:43:33-05:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2020-06-12T11:14:45-05:00">2020-06-12T11:14:45-05:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -22,15 +22,15 @@
   <h2>
     <span class="group_name">All Files</span>
     (<span class="covered_percent">
-      <span class="green">
-  98.21%
+      <span class="yellow">
+  80.69%
 </span>
 
      </span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         2.34
+         1.88
        </span>
     </span> hits/line
     )
@@ -39,15 +39,15 @@
   <a name="AllFiles"></a>
 
   <div>
-    <b>3</b> files in total.
+    <b>5</b> files in total.
   </div>
 
   <div class="t-line-summary">
-    <b>279</b> relevant lines,
-    <span class="green"><b>274</b> lines covered</span> and
-    <span class="red"><b>5</b> lines missed. </span>
-    (<span class="green">
-  98.21%
+    <b>404</b> relevant lines,
+    <span class="green"><b>326</b> lines covered</span> and
+    <span class="red"><b>78</b> lines missed. </span>
+    (<span class="yellow">
+  80.69%
 </span>
 )
   </div>
@@ -71,13 +71,35 @@
       <tbody>
         
           <tr class="t-file">
+            <td class="strong t-file__name"><a href="#72f768431a1d7d0121a6788cd3802b574e8cbce6" class="src_link" title="app.rb">app.rb</a></td>
+            <td class="red strong cell--number t-file__coverage">30.61 %</td>
+            <td class="cell--number">153</td>
+            <td class="cell--number">98</td>
+            <td class="cell--number">30</td>
+            <td class="cell--number">68</td>
+            <td class="cell--number">0.31</td>
+            
+          </tr>
+        
+          <tr class="t-file">
+            <td class="strong t-file__name"><a href="#823739496bc1f5393522a09a84f3bedfc8f5386b" class="src_link" title="features/step_definitions/template_steps.rb">features/step_definitions/template_steps.rb</a></td>
+            <td class="red strong cell--number t-file__coverage">44.44 %</td>
+            <td class="cell--number">38</td>
+            <td class="cell--number">18</td>
+            <td class="cell--number">8</td>
+            <td class="cell--number">10</td>
+            <td class="cell--number">0.44</td>
+            
+          </tr>
+        
+          <tr class="t-file">
             <td class="strong t-file__name"><a href="#e6f241b97024d08905505bab1895e24e904f25e8" class="src_link" title="lib/Game.rb">lib/Game.rb</a></td>
-            <td class="green strong cell--number t-file__coverage">94.51 %</td>
+            <td class="green strong cell--number t-file__coverage">100.00 %</td>
             <td class="cell--number">158</td>
             <td class="cell--number">91</td>
-            <td class="cell--number">86</td>
-            <td class="cell--number">5</td>
-            <td class="cell--number">3.78</td>
+            <td class="cell--number">91</td>
+            <td class="cell--number">0</td>
+            <td class="cell--number">4.19</td>
             
           </tr>
         
@@ -88,16 +110,16 @@
             <td class="cell--number">30</td>
             <td class="cell--number">30</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">5.00</td>
+            <td class="cell--number">5.80</td>
             
           </tr>
         
           <tr class="t-file">
-            <td class="strong t-file__name"><a href="#4fde439d05a664fc1027a3203a9a51544adaed2d" class="src_link" title="spec/user_spec.rb">spec/user_spec.rb</a></td>
+            <td class="strong t-file__name"><a href="#21d1ffa6e8a9cd09eb773c969ad6af3ae557907e" class="src_link" title="spec/userAndGame_spec.rb">spec/userAndGame_spec.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">206</td>
-            <td class="cell--number">158</td>
-            <td class="cell--number">158</td>
+            <td class="cell--number">216</td>
+            <td class="cell--number">167</td>
+            <td class="cell--number">167</td>
             <td class="cell--number">0</td>
             <td class="cell--number">1.00</td>
             
@@ -115,17 +137,2180 @@
       <div id="footer">
         Generated by <a href="https://github.com/colszowka/simplecov">simplecov</a> v0.18.5
         and simplecov-html v0.12.2<br/>
-        using RSpec
+        using Cucumber Features, RSpec
       </div>
 
       <div class="source_files">
+      
+        <div class="source_table" id="72f768431a1d7d0121a6788cd3802b574e8cbce6">
+  <div class="header">
+    <h3>app.rb</h3>
+    <h4>
+      <span class="red">
+  30.61%
+</span>
+
+      lines covered
+    </h4>
+
+    
+
+    <div class="t-line-summary">
+      <b>98</b> relevant lines.
+      <span class="green"><b>30</b> lines covered</span> and
+      <span class="red"><b>68</b> lines missed.</span>
+    </div>
+
+    
+
+  </div>
+
+  <pre>
+    <ol>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="1">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">require &#39;sinatra&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="2">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">require &#39;./lib/User.rb&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="3">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">require &#39;./lib/Game.rb&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="4">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="5">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">@@juego=Game.new()</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="6">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">@@user = User.new()</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="7">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">@@dif=0</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="8">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="9">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">get &#39;/&#39; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="10">
+            
+            
+
+            
+
+            <code class="ruby">  erb:home_view</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="11">
+            
+            
+
+            
+
+            <code class="ruby">end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="12">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="13">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">get &#39;/RegisterName&#39; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="14">
+            
+            
+
+            
+
+            <code class="ruby">    erb:registerName_view</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="15">
+            
+            
+
+            
+
+            <code class="ruby">end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="16">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="17">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">get &#39;/RegisterAccount&#39; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="18">
+            
+            
+
+            
+
+            <code class="ruby">  </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="19">
+            
+            
+
+            
+
+            <code class="ruby">  erb:registerAccount_view</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="20">
+            
+            
+
+            
+
+            <code class="ruby">end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="21">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="22">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">post &#39;/confirmName&#39; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="23">
+            
+            
+
+            
+
+            <code class="ruby">   @@user.setName(params[:name])</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="24">
+            
+            
+
+            
+
+            <code class="ruby">   @name=@@user.getName()</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="25">
+            
+            
+
+            
+
+            <code class="ruby">   @@user.setNickname(params[:nickname])</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="26">
+            
+            
+
+            
+
+            <code class="ruby">   @nickName = @@user.getNickname()</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="27">
+            
+            
+
+            
+
+            <code class="ruby">   erb:confirmationName_view</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="28">
+            
+            
+
+            
+
+            <code class="ruby">end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="29">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">post &#39;/RegisterWithAccount&#39; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="30">
+            
+            
+
+            
+
+            <code class="ruby">  @@user.setEmail(params[:email])</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="31">
+            
+            
+
+            
+
+            <code class="ruby">  @@user.setPassword(params[:password])</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="32">
+            
+            
+
+            
+
+            <code class="ruby">  erb:registerName_view</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="33">
+            
+            
+
+            
+
+            <code class="ruby">end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="34">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">get &#39;/InvitePeople&#39; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="35">
+            
+            
+
+            
+
+            <code class="ruby">  @code=(@@juego.getInvitationCode())</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="36">
+            
+            
+
+            
+
+            <code class="ruby">  erb:invitation_view</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="37">
+            
+            
+
+            
+
+            <code class="ruby">end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="38">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">post &#39;/putInvitation&#39; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="39">
+            
+            
+
+            
+
+            <code class="ruby">  erb:guesserCode_view</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="40">
+            
+            
+
+            
+
+            <code class="ruby">end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="41">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="42">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">get &#39;/menuStartGame&#39; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="43">
+            
+            
+
+            
+
+            <code class="ruby">  erb:selectTypeCode_view</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="44">
+            
+            
+
+            
+
+            <code class="ruby">end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="45">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">get &#39;/menuNumber&#39; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="46">
+            
+            
+
+            
+
+            <code class="ruby">  erb:seleccionTypePlayer_view</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="47">
+            
+            
+
+            
+
+            <code class="ruby">end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="48">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="49">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">get &#39;/menuColors&#39; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="50">
+            
+            
+
+            
+
+            <code class="ruby">  erb:selectTypeColors_view</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="51">
+            
+            
+
+            
+
+            <code class="ruby">end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="52">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="53">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="54">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">get &#39;/SelectTypeGenerator&#39; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="55">
+            
+            
+
+            
+
+            <code class="ruby">  erb:setCodeDificulty_view</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="56">
+            
+            
+
+            
+
+            <code class="ruby">end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="57">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="58">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="59">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">get &#39;/SelectTypeGuesser&#39; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="60">
+            
+            
+
+            
+
+            <code class="ruby">  erb:guesserCode_view</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="61">
+            
+            
+
+            
+
+            <code class="ruby">  </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="62">
+            
+            
+
+            
+
+            <code class="ruby">end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="63">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">post &#39;/codeDificulty4&#39; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="64">
+            
+            
+
+            
+
+            <code class="ruby">  @@dif=4</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="65">
+            
+            
+
+            
+
+            <code class="ruby">  @codeDif=@@dif.to_s</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="66">
+            
+            
+
+            
+
+            <code class="ruby">  erb:setCode_view</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="67">
+            
+            
+
+            
+
+            <code class="ruby">end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="68">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">post &#39;/codeDificulty6&#39; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="69">
+            
+            
+
+            
+
+            <code class="ruby">  @@dif=6</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="70">
+            
+            
+
+            
+
+            <code class="ruby">  @codeDif=@@dif.to_s</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="71">
+            
+            
+
+            
+
+            <code class="ruby">  erb:setCode_view</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="72">
+            
+            
+
+            
+
+            <code class="ruby">end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="73">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">post &#39;/codeDificulty8&#39; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="74">
+            
+            
+
+            
+
+            <code class="ruby">  @@dif=8</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="75">
+            
+            
+
+            
+
+            <code class="ruby">  @codeDif=@@dif.to_s</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="76">
+            
+            
+
+            
+
+            <code class="ruby">  erb:setCode_view</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="77">
+            
+            
+
+            
+
+            <code class="ruby">end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="78">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">post &#39;/codeDificultyPer&#39; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="79">
+            
+            
+
+            
+
+            <code class="ruby">  erb:setCodePer_view</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="80">
+            
+            
+
+            
+
+            <code class="ruby">end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="81">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="82">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">post &#39;/verifySizeCode&#39; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="83">
+            
+            
+
+            
+
+            <code class="ruby">  @codigo = params[:codigo]</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="84">
+            
+            
+
+            
+
+            <code class="ruby">  @codigoS=@codigo.to_s</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="85">
+            
+            
+
+            
+
+            <code class="ruby">  @code=@codigoS.size</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="86">
+            
+            
+
+            
+
+            <code class="ruby">  if(@code!=@@dif)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="87">
+            
+            
+
+            
+
+            <code class="ruby">    @difS=@@dif.to_s</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="88">
+            
+            
+
+            
+
+            <code class="ruby">    @codeS=@code.to_s</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="89">
+            
+            
+
+            
+
+            <code class="ruby">    erb:errorSize_view</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="90">
+            
+            
+
+            
+
+            <code class="ruby">  else</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="91">
+            
+            
+
+            
+
+            <code class="ruby">    @@juego.setCode(@codigo)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="92">
+            
+            
+
+            
+
+            <code class="ruby">    erb:setNumberOfTries_view</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="93">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="94">
+            
+            
+
+            
+
+            <code class="ruby">end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="95">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">post &#39;/setRandomCode&#39; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="96">
+            
+            
+
+            
+
+            <code class="ruby">  if(@@dif==8)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="97">
+            
+            
+
+            
+
+            <code class="ruby">    @@juego.setRandomCodeEight()</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="98">
+            
+            
+
+            
+
+            <code class="ruby">  else</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="99">
+            
+            
+
+            
+
+            <code class="ruby">    if(@@dif==6)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="100">
+            
+            
+
+            
+
+            <code class="ruby">      @@juego.setRandomCodeSix()</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="101">
+            
+            
+
+            
+
+            <code class="ruby">    else</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="102">
+            
+            
+
+            
+
+            <code class="ruby">      @@juego.setRandomCode()</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="103">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="104">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="105">
+            
+            
+
+            
+
+            <code class="ruby">  erb:setNumberOfTries_view</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="106">
+            
+            
+
+            
+
+            <code class="ruby">end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="107">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="108">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">post &#39;/setCode&#39; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="109">
+            
+            
+
+            
+
+            <code class="ruby">  @codigo = params[:codigo]</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="110">
+            
+            
+
+            
+
+            <code class="ruby">  @@juego.setCode(@codigo)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="111">
+            
+            
+
+            
+
+            <code class="ruby">  erb:setNumberOfTries_view</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="112">
+            
+            
+
+            
+
+            <code class="ruby">end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="113">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">post &#39;/GuessCode&#39; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="114">
+            
+            
+
+            
+
+            <code class="ruby">  @trie = params[:tries]</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="115">
+            
+            
+
+            
+
+            <code class="ruby">  @@juego.setIntentos(@trie)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="116">
+            
+            
+
+            
+
+            <code class="ruby">  @@dif=0</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="117">
+            
+            
+
+            
+
+            <code class="ruby">  erb:guesserCode_view</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="118">
+            
+            
+
+            
+
+            <code class="ruby">end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="119">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="120">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="121">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">post &#39;/GuessCode&#39; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="122">
+            
+            
+
+            
+
+            <code class="ruby">  @result=@@juego.validateNumbers(params[:guessCode])</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="123">
+            
+            
+
+            
+
+            <code class="ruby">  @intentos=@@juego.getIntentos()</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="124">
+            
+            
+
+            
+
+            <code class="ruby">  @intentosString=@intentos.to_s</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="125">
+            
+            
+
+            
+
+            <code class="ruby">  @codigo = @@juego.getCode()</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="126">
+            
+            
+
+            
+
+            <code class="ruby">  if(@result == (@@juego.sizeOfCode()+&quot; toros y 0 vacas&quot;))</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="127">
+            
+            
+
+            
+
+            <code class="ruby">    @@juego.setIntentos(10)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="128">
+            
+            
+
+            
+
+            <code class="ruby">    erb:winner_view</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="129">
+            
+            
+
+            
+
+            <code class="ruby">      </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="130">
+            
+            
+
+            
+
+            <code class="ruby">  else</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="131">
+            
+            
+
+            
+
+            <code class="ruby">    if(@intentos == 0)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="132">
+            
+            
+
+            
+
+            <code class="ruby">      @@juego.setIntentos(10)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="133">
+            
+            
+
+            
+
+            <code class="ruby">      erb:losser_view</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="134">
+            
+            
+
+            
+
+            <code class="ruby">        </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="135">
+            
+            
+
+            
+
+            <code class="ruby">    else</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="136">
+            
+            
+
+            
+
+            <code class="ruby">      erb:response_view</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="137">
+            
+            
+
+            
+
+            <code class="ruby">    end      </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="138">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="139">
+            
+            
+
+            
+
+            <code class="ruby">end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="140">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="141">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">post &#39;/giveup&#39; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="142">
+            
+            
+
+            
+
+            <code class="ruby">  @@juego.rendirse()</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="143">
+            
+            
+
+            
+
+            <code class="ruby">  @codigo = @@juego.getCode()</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="144">
+            
+            
+
+            
+
+            <code class="ruby">  erb:losser_view</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="145">
+            
+            
+
+            
+
+            <code class="ruby">end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="146">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">get &#39;/game&#39; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="147">
+            
+            
+
+            
+
+            <code class="ruby">  erb:guesserCode_view</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="148">
+            
+            
+
+            
+
+            <code class="ruby">end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="149">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="150">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">get &#39;/game2&#39; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="151">
+            
+            
+
+            
+
+            <code class="ruby">  @@juego.setIntentos(10)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="152">
+            
+            
+
+            
+
+            <code class="ruby">  erb:registerName_view</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="153">
+            
+            
+
+            
+
+            <code class="ruby">end</code>
+          </li>
+        </div>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="823739496bc1f5393522a09a84f3bedfc8f5386b">
+  <div class="header">
+    <h3>features/step_definitions/template_steps.rb</h3>
+    <h4>
+      <span class="red">
+  44.44%
+</span>
+
+      lines covered
+    </h4>
+
+    
+
+    <div class="t-line-summary">
+      <b>18</b> relevant lines.
+      <span class="green"><b>8</b> lines covered</span> and
+      <span class="red"><b>10</b> lines missed.</span>
+    </div>
+
+    
+
+  </div>
+
+  <pre>
+    <ol>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="1">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">Given /^I open the web app$/ do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="2">
+            
+            
+
+            
+
+            <code class="ruby">  visit &#39;/&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="3">
+            
+            
+
+            
+
+            <code class="ruby">end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="4">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="5">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">Given /^I post to the web app$/ do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="6">
+            
+            
+
+            
+
+            <code class="ruby">  visit &#39;/&#39;, :post, &quot;field_name=value&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="7">
+            
+            
+
+            
+
+            <code class="ruby">end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="8">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="9">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">When /^I click on &quot;(.*)&quot;$/ do |text|</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="10">
+            
+            
+
+            
+
+            <code class="ruby">  click_link(text)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="11">
+            
+            
+
+            
+
+            <code class="ruby">end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="12">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="13">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">Then /^I should see &quot;(.*)&quot;$/ do |text|</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="14">
+            
+            
+
+            
+
+            <code class="ruby">  last_response.body.should =~ /#{text}/m</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="15">
+            
+            
+
+            
+
+            <code class="ruby">end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="16">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="17">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">When /^I fill &quot;(.*)&quot; with &quot;(.*)&quot;$/ do |field, value|</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="18">
+            
+            
+
+            
+
+            <code class="ruby">  fill_in(field, :with =&gt; value)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="19">
+            
+            
+
+            
+
+            <code class="ruby">end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="20">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="21">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">When /^I press &quot;(.*)&quot;$/ do |name|</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="22">
+            
+            
+
+            
+
+            <code class="ruby">  click_button(name)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="23">
+            
+            
+
+            
+
+            <code class="ruby">end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="24">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="25">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">Then(/^I should see the image &quot;(.*?)&quot;$/) do |image_name|</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="26">
+            
+            
+
+            
+
+            <code class="ruby">  last_response.should have_xpath(&quot;//img[@src=\&quot;#{image_name}\&quot;]&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="27">
+            
+            
+
+            
+
+            <code class="ruby">end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="28">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="29">
+            
+            
+
+            
+
+            <code class="ruby"># Check the content of a specific table cell</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="30">
+            
+            
+
+            
+
+            <code class="ruby"># To use this, every cell should have a unique ID like XX:YY (1:3)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="31">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">Then(/^I should see &quot;(.*?)&quot; at the cell (\d+), (\d+)$/) do |text, x, y|</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="32">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="33">
+            
+            
+
+            
+
+            <code class="ruby">  cell = &quot;#{x}:#{y}&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="34">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="35">
+            
+            
+
+            
+
+            <code class="ruby">  last_response.should have_xpath( &quot;//td[@id=\&quot;#{cell}\&quot;]&quot;) do |td|</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="36">
+            
+            
+
+            
+
+            <code class="ruby">    td.should contain( text )</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="37">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="38">
+            
+            
+
+            
+
+            <code class="ruby">end</code>
+          </li>
+        </div>
+      
+    </ol>
+  </pre>
+</div>
+
       
         <div class="source_table" id="e6f241b97024d08905505bab1895e24e904f25e8">
   <div class="header">
     <h3>lib/Game.rb</h3>
     <h4>
       <span class="green">
-  94.51%
+  100.0%
 </span>
 
       lines covered
@@ -135,8 +2320,8 @@
 
     <div class="t-line-summary">
       <b>91</b> relevant lines.
-      <span class="green"><b>86</b> lines covered</span> and
-      <span class="red"><b>5</b> lines missed.</span>
+      <span class="green"><b>91</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
     </div>
 
     
@@ -158,8 +2343,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="2">
-            <span class="hits">1</span>
+          <li class="covered" data-hits="2" data-linenumber="2">
+            <span class="hits">2</span>
             
 
             
@@ -169,8 +2354,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="3">
-            <span class="hits">1</span>
+          <li class="covered" data-hits="2" data-linenumber="3">
+            <span class="hits">2</span>
             
 
             
@@ -180,8 +2365,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="24" data-linenumber="4">
-            <span class="hits">24</span>
+          <li class="covered" data-hits="27" data-linenumber="4">
+            <span class="hits">27</span>
             
 
             
@@ -191,8 +2376,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="24" data-linenumber="5">
-            <span class="hits">24</span>
+          <li class="covered" data-hits="27" data-linenumber="5">
+            <span class="hits">27</span>
             
 
             
@@ -202,8 +2387,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="24" data-linenumber="6">
-            <span class="hits">24</span>
+          <li class="covered" data-hits="27" data-linenumber="6">
+            <span class="hits">27</span>
             
 
             
@@ -224,8 +2409,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="8">
-            <span class="hits">1</span>
+          <li class="covered" data-hits="2" data-linenumber="8">
+            <span class="hits">2</span>
             
 
             
@@ -257,8 +2442,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="11">
-            <span class="hits">1</span>
+          <li class="covered" data-hits="2" data-linenumber="11">
+            <span class="hits">2</span>
             
 
             
@@ -301,8 +2486,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="15">
-            <span class="hits">1</span>
+          <li class="covered" data-hits="2" data-linenumber="15">
+            <span class="hits">2</span>
             
 
             
@@ -345,8 +2530,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="19">
-            <span class="hits">1</span>
+          <li class="covered" data-hits="2" data-linenumber="19">
+            <span class="hits">2</span>
             
 
             
@@ -400,8 +2585,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="24">
-            <span class="hits">1</span>
+          <li class="covered" data-hits="2" data-linenumber="24">
+            <span class="hits">2</span>
             
 
             
@@ -444,8 +2629,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="28">
-            <span class="hits">1</span>
+          <li class="covered" data-hits="2" data-linenumber="28">
+            <span class="hits">2</span>
             
 
             
@@ -466,8 +2651,8 @@
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="30">
-            
+          <li class="covered" data-hits="1" data-linenumber="30">
+            <span class="hits">1</span>
             
 
             
@@ -477,8 +2662,8 @@
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="31">
-            
+          <li class="covered" data-hits="1" data-linenumber="31">
+            <span class="hits">1</span>
             
 
             
@@ -488,8 +2673,8 @@
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="32">
-            
+          <li class="covered" data-hits="1" data-linenumber="32">
+            <span class="hits">1</span>
             
 
             
@@ -510,8 +2695,8 @@
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="34">
-            
+          <li class="covered" data-hits="1" data-linenumber="34">
+            <span class="hits">1</span>
             
 
             
@@ -543,8 +2728,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="37">
-            <span class="hits">1</span>
+          <li class="covered" data-hits="2" data-linenumber="37">
+            <span class="hits">2</span>
             
 
             
@@ -609,8 +2794,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="43">
-            <span class="hits">1</span>
+          <li class="covered" data-hits="2" data-linenumber="43">
+            <span class="hits">2</span>
             
 
             
@@ -653,8 +2838,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="47">
-            <span class="hits">1</span>
+          <li class="covered" data-hits="2" data-linenumber="47">
+            <span class="hits">2</span>
             
 
             
@@ -664,8 +2849,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="14" data-linenumber="48">
-            <span class="hits">14</span>
+          <li class="covered" data-hits="15" data-linenumber="48">
+            <span class="hits">15</span>
             
 
             
@@ -686,8 +2871,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="50">
-            <span class="hits">1</span>
+          <li class="covered" data-hits="2" data-linenumber="50">
+            <span class="hits">2</span>
             
 
             
@@ -697,8 +2882,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="12" data-linenumber="51">
-            <span class="hits">12</span>
+          <li class="covered" data-hits="13" data-linenumber="51">
+            <span class="hits">13</span>
             
 
             
@@ -708,8 +2893,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="12" data-linenumber="52">
-            <span class="hits">12</span>
+          <li class="covered" data-hits="13" data-linenumber="52">
+            <span class="hits">13</span>
             
 
             
@@ -752,8 +2937,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="56">
-            <span class="hits">1</span>
+          <li class="covered" data-hits="2" data-linenumber="56">
+            <span class="hits">2</span>
             
 
             
@@ -796,8 +2981,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="60">
-            <span class="hits">1</span>
+          <li class="covered" data-hits="2" data-linenumber="60">
+            <span class="hits">2</span>
             
 
             
@@ -983,8 +3168,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="77">
-            <span class="hits">1</span>
+          <li class="covered" data-hits="2" data-linenumber="77">
+            <span class="hits">2</span>
             
 
             
@@ -994,8 +3179,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="3" data-linenumber="78">
-            <span class="hits">3</span>
+          <li class="covered" data-hits="4" data-linenumber="78">
+            <span class="hits">4</span>
             
 
             
@@ -1005,19 +3190,19 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="3" data-linenumber="79">
-            <span class="hits">3</span>
+          <li class="covered" data-hits="4" data-linenumber="79">
+            <span class="hits">4</span>
             
 
             
 
-            <code class="ruby">        if (num.to_s.size==0)</code>
+            <code class="ruby">        if (num.to_s==&#39; &#39;)</code>
           </li>
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="80">
-            
+          <li class="covered" data-hits="1" data-linenumber="80">
+            <span class="hits">1</span>
             
 
             
@@ -1148,8 +3333,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="92">
-            <span class="hits">1</span>
+          <li class="covered" data-hits="2" data-linenumber="92">
+            <span class="hits">2</span>
             
 
             
@@ -1181,8 +3366,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="95">
-            <span class="hits">1</span>
+          <li class="covered" data-hits="2" data-linenumber="95">
+            <span class="hits">2</span>
             
 
             
@@ -1533,8 +3718,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="127">
-            <span class="hits">1</span>
+          <li class="covered" data-hits="2" data-linenumber="127">
+            <span class="hits">2</span>
             
 
             
@@ -1916,8 +4101,8 @@
     <ol>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="1">
-            <span class="hits">1</span>
+          <li class="covered" data-hits="2" data-linenumber="1">
+            <span class="hits">2</span>
             
 
             
@@ -1927,8 +4112,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="2">
-            <span class="hits">1</span>
+          <li class="covered" data-hits="2" data-linenumber="2">
+            <span class="hits">2</span>
             
 
             
@@ -1938,8 +4123,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="28" data-linenumber="3">
-            <span class="hits">28</span>
+          <li class="covered" data-hits="31" data-linenumber="3">
+            <span class="hits">31</span>
             
 
             
@@ -1949,8 +4134,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="28" data-linenumber="4">
-            <span class="hits">28</span>
+          <li class="covered" data-hits="31" data-linenumber="4">
+            <span class="hits">31</span>
             
 
             
@@ -1960,8 +4145,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="28" data-linenumber="5">
-            <span class="hits">28</span>
+          <li class="covered" data-hits="31" data-linenumber="5">
+            <span class="hits">31</span>
             
 
             
@@ -1971,8 +4156,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="28" data-linenumber="6">
-            <span class="hits">28</span>
+          <li class="covered" data-hits="31" data-linenumber="6">
+            <span class="hits">31</span>
             
 
             
@@ -1993,8 +4178,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="8">
-            <span class="hits">1</span>
+          <li class="covered" data-hits="2" data-linenumber="8">
+            <span class="hits">2</span>
             
 
             
@@ -2021,7 +4206,7 @@
 
             
 
-            <code class="ruby">            nick=getName()+(rand(100)).to_s</code>
+            <code class="ruby">            nick=getName()+(rand(90)+10).to_s</code>
           </li>
         </div>
       
@@ -2059,8 +4244,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="14">
-            <span class="hits">1</span>
+          <li class="covered" data-hits="2" data-linenumber="14">
+            <span class="hits">2</span>
             
 
             
@@ -2092,8 +4277,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="17">
-            <span class="hits">1</span>
+          <li class="covered" data-hits="2" data-linenumber="17">
+            <span class="hits">2</span>
             
 
             
@@ -2125,8 +4310,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="20">
-            <span class="hits">1</span>
+          <li class="covered" data-hits="2" data-linenumber="20">
+            <span class="hits">2</span>
             
 
             
@@ -2191,8 +4376,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="26">
-            <span class="hits">1</span>
+          <li class="covered" data-hits="2" data-linenumber="26">
+            <span class="hits">2</span>
             
 
             
@@ -2224,8 +4409,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="29">
-            <span class="hits">1</span>
+          <li class="covered" data-hits="2" data-linenumber="29">
+            <span class="hits">2</span>
             
 
             
@@ -2257,8 +4442,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="32">
-            <span class="hits">1</span>
+          <li class="covered" data-hits="2" data-linenumber="32">
+            <span class="hits">2</span>
             
 
             
@@ -2290,8 +4475,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="35">
-            <span class="hits">1</span>
+          <li class="covered" data-hits="2" data-linenumber="35">
+            <span class="hits">2</span>
             
 
             
@@ -2323,8 +4508,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="38">
-            <span class="hits">1</span>
+          <li class="covered" data-hits="2" data-linenumber="38">
+            <span class="hits">2</span>
             
 
             
@@ -2356,8 +4541,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="41">
-            <span class="hits">1</span>
+          <li class="covered" data-hits="2" data-linenumber="41">
+            <span class="hits">2</span>
             
 
             
@@ -2404,9 +4589,9 @@
 </div>
 
       
-        <div class="source_table" id="4fde439d05a664fc1027a3203a9a51544adaed2d">
+        <div class="source_table" id="21d1ffa6e8a9cd09eb773c969ad6af3ae557907e">
   <div class="header">
-    <h3>spec/user_spec.rb</h3>
+    <h3>spec/userAndGame_spec.rb</h3>
     <h4>
       <span class="green">
   100.0%
@@ -2418,8 +4603,8 @@
     
 
     <div class="t-line-summary">
-      <b>158</b> relevant lines.
-      <span class="green"><b>158</b> lines covered</span> and
+      <b>167</b> relevant lines.
+      <span class="green"><b>167</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
 
@@ -3174,7 +5359,7 @@
 
             
 
-            <code class="ruby">    it &#39;devuelve no puede tener letras al validar el codigo&#39; do</code>
+            <code class="ruby">    it &#39;devuelve espacio no puede ser vacio&#39; do</code>
           </li>
         </div>
       
@@ -3218,7 +5403,7 @@
 
             
 
-            <code class="ruby">        expect(@juego.validateNumbers(&quot;546f4&quot;)).to eq(&quot;El codigo no deberia tener letras&quot;)</code>
+            <code class="ruby">        expect(@juego.validateNumbers(&#39; &#39;)).to eq(&quot;No puede ser vacio el numero&quot;)</code>
           </li>
         </div>
       
@@ -3240,7 +5425,7 @@
 
             
 
-            <code class="ruby">    it &#39;devuelve  el codigo por defecto&#39; do</code>
+            <code class="ruby">    it &#39;devuelve no puede tener letras al validar el codigo&#39; do</code>
           </li>
         </div>
       
@@ -3251,7 +5436,7 @@
 
             
 
-            <code class="ruby">        @juego=Game.new()</code>
+            <code class="ruby">        @user=User.new(&quot;Juan&quot;)</code>
           </li>
         </div>
       
@@ -3262,18 +5447,18 @@
 
             
 
-            <code class="ruby">        expect(@juego.getCode()).to eq(1234)</code>
+            <code class="ruby">        @juego=Game.new(@user)</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="77">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="77">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">    end</code>
+            
+
+            <code class="ruby">        @juego.setCode(123)</code>
           </li>
         </div>
       
@@ -3284,18 +5469,18 @@
 
             
 
-            <code class="ruby">    it &#39;devuelve intentos por defecto&#39; do</code>
+            <code class="ruby">        expect(@juego.validateNumbers(&quot;546f4&quot;)).to eq(&quot;El codigo no deberia tener letras&quot;)</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="79">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="79">
+            
             
 
             
 
-            <code class="ruby">        @juego=Game.new()</code>
+            <code class="ruby">    end</code>
           </li>
         </div>
       
@@ -3306,34 +5491,12 @@
 
             
 
-            <code class="ruby">        expect(@juego.getIntentos()).to eq(10)</code>
+            <code class="ruby">    it &#39;devuelve  el codigo por defecto&#39; do</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="81">
-            
-            
-
-            
-
-            <code class="ruby">    end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="82">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    it &#39;devuelve 16 intentos&#39; do</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="83">
+          <li class="covered" data-hits="1" data-linenumber="81">
             <span class="hits">1</span>
             
 
@@ -3344,29 +5507,18 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="84">
+          <li class="covered" data-hits="1" data-linenumber="82">
             <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">        @juego.setIntentos(16)</code>
+            <code class="ruby">        expect(@juego.getCode()).to eq(1234)</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="85">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">        expect(@juego.getIntentos()).to eq(16)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="86">
+          <li class="never" data-hits="" data-linenumber="83">
             
             
 
@@ -3377,13 +5529,46 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="87">
+          <li class="covered" data-hits="1" data-linenumber="84">
             <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">    it &#39;devuelve los intentos tras jugar&#39; do</code>
+            <code class="ruby">    it &#39;devuelve intentos por defecto&#39; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="85">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">        @juego=Game.new()</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="86">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">        expect(@juego.getIntentos()).to eq(10)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="87">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
           </li>
         </div>
       
@@ -3394,7 +5579,7 @@
 
             
 
-            <code class="ruby">        @user=User.new(&quot;Juan&quot;)</code>
+            <code class="ruby">    it &#39;devuelve 16 intentos&#39; do</code>
           </li>
         </div>
       
@@ -3405,7 +5590,7 @@
 
             
 
-            <code class="ruby">        @juego=Game.new(@user,15,187)</code>
+            <code class="ruby">        @juego=Game.new()</code>
           </li>
         </div>
       
@@ -3416,7 +5601,7 @@
 
             
 
-            <code class="ruby">        @juego.play(129)</code>
+            <code class="ruby">        @juego.setIntentos(16)</code>
           </li>
         </div>
       
@@ -3427,7 +5612,7 @@
 
             
 
-            <code class="ruby">        expect(@juego.getIntentos).to eq(14)</code>
+            <code class="ruby">        expect(@juego.getIntentos()).to eq(16)</code>
           </li>
         </div>
       
@@ -3443,13 +5628,13 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="93">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="93">
+            <span class="hits">1</span>
             
 
-            <code class="ruby"></code>
+            
+
+            <code class="ruby">    it &#39;devuelve los intentos tras jugar&#39; do</code>
           </li>
         </div>
       
@@ -3460,7 +5645,7 @@
 
             
 
-            <code class="ruby">    it &#39;devuelve 0 intentos tras rendirse&#39; do</code>
+            <code class="ruby">        @user=User.new(&quot;Juan&quot;)</code>
           </li>
         </div>
       
@@ -3471,7 +5656,7 @@
 
             
 
-            <code class="ruby">        @juego=Game.new()</code>
+            <code class="ruby">        @juego=Game.new(@user,15,187)</code>
           </li>
         </div>
       
@@ -3482,7 +5667,7 @@
 
             
 
-            <code class="ruby">        @juego.setIntentos(16)</code>
+            <code class="ruby">        @juego.play(129)</code>
           </li>
         </div>
       
@@ -3493,23 +5678,12 @@
 
             
 
-            <code class="ruby">        @juego.rendirse()</code>
+            <code class="ruby">        expect(@juego.getIntentos).to eq(14)</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="98">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">        expect(@juego.getIntentos()).to eq(0)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="99">
+          <li class="never" data-hits="" data-linenumber="98">
             
             
 
@@ -3520,13 +5694,24 @@
         </div>
       
         <div>
+          <li class="never" data-hits="" data-linenumber="99">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
           <li class="covered" data-hits="1" data-linenumber="100">
             <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">    it &#39;devuelve la cantidad de digitos del codigo por defecto&#39; do</code>
+            <code class="ruby">    it &#39;devuelve 0 intentos tras rendirse&#39; do</code>
           </li>
         </div>
       
@@ -3548,18 +5733,18 @@
 
             
 
-            <code class="ruby">        expect(@juego.sizeOfCode()).to eq(&quot;4&quot;)</code>
+            <code class="ruby">        @juego.setIntentos(16)</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="103">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="103">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">    end</code>
+            
+
+            <code class="ruby">        @juego.rendirse()</code>
           </li>
         </div>
       
@@ -3570,18 +5755,18 @@
 
             
 
-            <code class="ruby">    it &#39;devuelve la cantidad de digitos del codigo&#39; do</code>
+            <code class="ruby">        expect(@juego.getIntentos()).to eq(0)</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="105">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="105">
+            
             
 
             
 
-            <code class="ruby">        @juego=Game.new()</code>
+            <code class="ruby">    end</code>
           </li>
         </div>
       
@@ -3592,7 +5777,7 @@
 
             
 
-            <code class="ruby">        @juego.setCode(129)</code>
+            <code class="ruby">    it &#39;devuelve la cantidad de digitos del codigo por defecto&#39; do</code>
           </li>
         </div>
       
@@ -3603,29 +5788,29 @@
 
             
 
-            <code class="ruby">        expect(@juego.sizeOfCode()).to eq(&quot;3&quot;)</code>
+            <code class="ruby">        @juego=Game.new()</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="108">
+          <li class="covered" data-hits="1" data-linenumber="108">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">        expect(@juego.sizeOfCode()).to eq(&quot;4&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="109">
             
             
 
             
 
             <code class="ruby">    end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="109">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    it &#39;devuelve el tipo de jugador que es&#39; do</code>
           </li>
         </div>
       
@@ -3636,7 +5821,7 @@
 
             
 
-            <code class="ruby">        @user=User.new()</code>
+            <code class="ruby">    it &#39;devuelve la cantidad de digitos del codigo&#39; do</code>
           </li>
         </div>
       
@@ -3647,7 +5832,7 @@
 
             
 
-            <code class="ruby">        @user.setTipo(1)</code>
+            <code class="ruby">        @juego=Game.new()</code>
           </li>
         </div>
       
@@ -3658,18 +5843,18 @@
 
             
 
-            <code class="ruby">        expect(@user.getTipo()).to eq(1)</code>
+            <code class="ruby">        @juego.setCode(129)</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="113">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="113">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">    end</code>
+            
+
+            <code class="ruby">        expect(@juego.sizeOfCode()).to eq(&quot;3&quot;)</code>
           </li>
         </div>
       
@@ -3680,18 +5865,18 @@
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">    end</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="115">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="115">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">    </code>
+            
+
+            <code class="ruby">    it &#39;devuelve el tipo de jugador que es&#39; do</code>
           </li>
         </div>
       
@@ -3702,7 +5887,7 @@
 
             
 
-            <code class="ruby">    it &#39;devuelve el nickname que se le creo&#39; do</code>
+            <code class="ruby">        @user=User.new()</code>
           </li>
         </div>
       
@@ -3713,7 +5898,7 @@
 
             
 
-            <code class="ruby">        @user=User.new()</code>
+            <code class="ruby">        @user.setTipo(1)</code>
           </li>
         </div>
       
@@ -3724,23 +5909,12 @@
 
             
 
-            <code class="ruby">        @user.setNickname(&quot;NickName&quot;)</code>
+            <code class="ruby">        expect(@user.getTipo()).to eq(1)</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="119">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">        expect(@user.getNickname()).to eq(&quot;NickName&quot;)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="120">
+          <li class="never" data-hits="" data-linenumber="119">
             
             
 
@@ -3751,7 +5925,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="121">
+          <li class="never" data-hits="" data-linenumber="120">
             
             
 
@@ -3762,13 +5936,24 @@
         </div>
       
         <div>
+          <li class="never" data-hits="" data-linenumber="121">
+            
+            
+
+            
+
+            <code class="ruby">    </code>
+          </li>
+        </div>
+      
+        <div>
           <li class="covered" data-hits="1" data-linenumber="122">
             <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">    it &#39;devuelve el tamaño del nickname que se le creo manualmente vacio&#39; do</code>
+            <code class="ruby">    it &#39;devuelve el nickname que se le creo&#39; do</code>
           </li>
         </div>
       
@@ -3779,7 +5964,7 @@
 
             
 
-            <code class="ruby">        @user=User.new(&quot;Juan&quot;)</code>
+            <code class="ruby">        @user=User.new()</code>
           </li>
         </div>
       
@@ -3790,7 +5975,7 @@
 
             
 
-            <code class="ruby">        @user.setNickname(&quot;&quot;)</code>
+            <code class="ruby">        @user.setNickname(&quot;NickName&quot;)</code>
           </li>
         </div>
       
@@ -3801,7 +5986,7 @@
 
             
 
-            <code class="ruby">        expect(@user.getNickname().size).to eq(6)</code>
+            <code class="ruby">        expect(@user.getNickname()).to eq(&quot;NickName&quot;)</code>
           </li>
         </div>
       
@@ -3834,7 +6019,7 @@
 
             
 
-            <code class="ruby">    it&#39;devolver numero de intento establecidos en este caso 15&#39; do </code>
+            <code class="ruby">    it &#39;devuelve el tamaño del nickname que se le creo manualmente vacio&#39; do</code>
           </li>
         </div>
       
@@ -3845,7 +6030,7 @@
 
             
 
-            <code class="ruby">        @juego=Game.new()</code>
+            <code class="ruby">        @user=User.new(&quot;Juan&quot;)</code>
           </li>
         </div>
       
@@ -3856,7 +6041,7 @@
 
             
 
-            <code class="ruby">        @juego.setIntentos(15)</code>
+            <code class="ruby">        @user.setNickname(&quot;&quot;)</code>
           </li>
         </div>
       
@@ -3867,7 +6052,7 @@
 
             
 
-            <code class="ruby">        expect(@juego.getIntentos()).to eq(15)</code>
+            <code class="ruby">        expect(@user.getNickname().size).to eq(6 )</code>
           </li>
         </div>
       
@@ -3900,7 +6085,7 @@
 
             
 
-            <code class="ruby">    it&#39;devolver email por defecto&#39; do </code>
+            <code class="ruby">    it&#39;devolver numero de intento establecidos en este caso 15&#39; do </code>
           </li>
         </div>
       
@@ -3911,7 +6096,7 @@
 
             
 
-            <code class="ruby">        @user=User.new()</code>
+            <code class="ruby">        @juego=Game.new()</code>
           </li>
         </div>
       
@@ -3922,18 +6107,18 @@
 
             
 
-            <code class="ruby">        expect(@user.getEmail()).to eq(&quot;&quot;)</code>
+            <code class="ruby">        @juego.setIntentos(15)</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="137">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="137">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">    end</code>
+            
+
+            <code class="ruby">        expect(@juego.getIntentos()).to eq(15)</code>
           </li>
         </div>
       
@@ -3944,18 +6129,18 @@
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">    end</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="139">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="139">
+            
             
 
             
 
-            <code class="ruby">    it&#39;devolver email prueba@hotmail.com&#39; do </code>
+            <code class="ruby"></code>
           </li>
         </div>
       
@@ -3966,7 +6151,7 @@
 
             
 
-            <code class="ruby">        @user=User.new()</code>
+            <code class="ruby">    it&#39;devolver email por defecto&#39; do </code>
           </li>
         </div>
       
@@ -3977,7 +6162,7 @@
 
             
 
-            <code class="ruby">        @user.setEmail(&quot;prueba@hotmail.com&quot;)</code>
+            <code class="ruby">        @user=User.new()</code>
           </li>
         </div>
       
@@ -3988,7 +6173,7 @@
 
             
 
-            <code class="ruby">        expect(@user.getEmail()).to eq(&quot;prueba@hotmail.com&quot;)</code>
+            <code class="ruby">        expect(@user.getEmail()).to eq(&quot;&quot;)</code>
           </li>
         </div>
       
@@ -4021,7 +6206,7 @@
 
             
 
-            <code class="ruby">    it&#39;devolver password por defecto&#39; do </code>
+            <code class="ruby">    it&#39;devolver email prueba@hotmail.com&#39; do </code>
           </li>
         </div>
       
@@ -4043,12 +6228,23 @@
 
             
 
-            <code class="ruby">        expect(@user.getPassword()).to eq(&quot;&quot;)</code>
+            <code class="ruby">        @user.setEmail(&quot;prueba@hotmail.com&quot;)</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="148">
+          <li class="covered" data-hits="1" data-linenumber="148">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">        expect(@user.getEmail()).to eq(&quot;prueba@hotmail.com&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="149">
             
             
 
@@ -4059,24 +6255,13 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="149">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="150">
+            
             
 
             
 
-            <code class="ruby">    it&#39;devolver password  prueba123&#39; do </code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="150">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">        @user=User.new()</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
@@ -4087,7 +6272,7 @@
 
             
 
-            <code class="ruby">        @user.setPassword(&quot;prueba123&quot;)</code>
+            <code class="ruby">    it&#39;devolver password por defecto&#39; do </code>
           </li>
         </div>
       
@@ -4098,12 +6283,23 @@
 
             
 
-            <code class="ruby">        expect(@user.getPassword()).to eq(&quot;prueba123&quot;)</code>
+            <code class="ruby">        @user=User.new()</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="153">
+          <li class="covered" data-hits="1" data-linenumber="153">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">        expect(@user.getPassword()).to eq(&quot;&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="154">
             
             
 
@@ -4114,24 +6310,13 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="154">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    it &#39;devolver password aleatoria&#39; do</code>
-          </li>
-        </div>
-      
-        <div>
           <li class="covered" data-hits="1" data-linenumber="155">
             <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">        @user=User.new(&quot;Juan&quot;)</code>
+            <code class="ruby">    it&#39;devolver password  prueba123&#39; do </code>
           </li>
         </div>
       
@@ -4142,7 +6327,7 @@
 
             
 
-            <code class="ruby">        @juego=Game.new(@user)</code>
+            <code class="ruby">        @user=User.new()</code>
           </li>
         </div>
       
@@ -4153,7 +6338,7 @@
 
             
 
-            <code class="ruby">        @juego.setRandomCode()</code>
+            <code class="ruby">        @user.setPassword(&quot;prueba123&quot;)</code>
           </li>
         </div>
       
@@ -4164,7 +6349,7 @@
 
             
 
-            <code class="ruby">        expect(@juego.sizeOfCode()).to eq(&quot;4&quot;)</code>
+            <code class="ruby">        expect(@user.getPassword()).to eq(&quot;prueba123&quot;)</code>
           </li>
         </div>
       
@@ -4186,7 +6371,7 @@
 
             
 
-            <code class="ruby">    it &#39;devolver password aleatoria tam6&#39; do</code>
+            <code class="ruby">    it &#39;devolver password aleatoria&#39; do</code>
           </li>
         </div>
       
@@ -4219,7 +6404,7 @@
 
             
 
-            <code class="ruby">        @juego.setRandomCodeSix()</code>
+            <code class="ruby">        @juego.setRandomCode()</code>
           </li>
         </div>
       
@@ -4230,7 +6415,7 @@
 
             
 
-            <code class="ruby">        expect(@juego.sizeOfCode()).to eq(&quot;6&quot;)</code>
+            <code class="ruby">        expect(@juego.sizeOfCode()).to eq(&quot;4&quot;)</code>
           </li>
         </div>
       
@@ -4252,7 +6437,7 @@
 
             
 
-            <code class="ruby">    it &#39;devolver password aleatoria tam8&#39; do</code>
+            <code class="ruby">    it &#39;devolver password aleatoria tam6&#39; do</code>
           </li>
         </div>
       
@@ -4285,7 +6470,7 @@
 
             
 
-            <code class="ruby">        @juego.setRandomCodeEight()</code>
+            <code class="ruby">        @juego.setRandomCodeSix()</code>
           </li>
         </div>
       
@@ -4296,7 +6481,7 @@
 
             
 
-            <code class="ruby">        expect(@juego.sizeOfCode()).to eq(&quot;8&quot;)</code>
+            <code class="ruby">        expect(@juego.sizeOfCode()).to eq(&quot;6&quot;)</code>
           </li>
         </div>
       
@@ -4318,7 +6503,7 @@
 
             
 
-            <code class="ruby">    it &#39;comprobacion de codigo de colores correcta&#39; do</code>
+            <code class="ruby">    it &#39;devolver password aleatoria tam8&#39; do</code>
           </li>
         </div>
       
@@ -4340,7 +6525,7 @@
 
             
 
-            <code class="ruby">        @juego=Game.new(@user,15)</code>
+            <code class="ruby">        @juego=Game.new(@user)</code>
           </li>
         </div>
       
@@ -4351,7 +6536,7 @@
 
             
 
-            <code class="ruby">        @cod=@juego.setCodeColorsToInt(&quot;RYBGWPOFSL&quot;)</code>
+            <code class="ruby">        @juego.setRandomCodeEight()</code>
           </li>
         </div>
       
@@ -4362,29 +6547,29 @@
 
             
 
-            <code class="ruby">        @juego.setCode(@cod)</code>
+            <code class="ruby">        expect(@juego.sizeOfCode()).to eq(&quot;8&quot;)</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="177">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">        expect(@juego.getCode()).to eq(1234567890)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="178">
+          <li class="never" data-hits="" data-linenumber="177">
             
             
 
             
 
             <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="178">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    it &#39;comprobacion de codigo de colores correcta&#39; do</code>
           </li>
         </div>
       
@@ -4395,7 +6580,7 @@
 
             
 
-            <code class="ruby">    it &#39;comprobacion de codigo de colores correcta2&#39; do</code>
+            <code class="ruby">        @user=User.new(&quot;Juan&quot;)</code>
           </li>
         </div>
       
@@ -4406,7 +6591,7 @@
 
             
 
-            <code class="ruby">        @user=User.new(&quot;Juan&quot;)</code>
+            <code class="ruby">        @juego=Game.new(@user,15)</code>
           </li>
         </div>
       
@@ -4417,7 +6602,7 @@
 
             
 
-            <code class="ruby">        @juego=Game.new(@user,15)</code>
+            <code class="ruby">        @cod=@juego.setCodeColorsToInt(&quot;RYBGWPOFSL&quot;)</code>
           </li>
         </div>
       
@@ -4428,7 +6613,7 @@
 
             
 
-            <code class="ruby">        @cod=@juego.setCodeColorsToInt(&quot;SOBOLORO&quot;)</code>
+            <code class="ruby">        @juego.setCode(@cod)</code>
           </li>
         </div>
       
@@ -4439,29 +6624,29 @@
 
             
 
-            <code class="ruby">        @juego.setCode(@cod)</code>
+            <code class="ruby">        expect(@juego.getCode()).to eq(1234567890)</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="184">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">        expect(@juego.getCode()).to eq(97370717)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="185">
+          <li class="never" data-hits="" data-linenumber="184">
             
             
 
             
 
             <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="185">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    it &#39;comprobacion de codigo de colores correcta2&#39; do</code>
           </li>
         </div>
       
@@ -4472,7 +6657,7 @@
 
             
 
-            <code class="ruby">    it &#39;comprobacion de codigo de colores correcta3&#39; do</code>
+            <code class="ruby">        @user=User.new(&quot;Juan&quot;)</code>
           </li>
         </div>
       
@@ -4483,7 +6668,7 @@
 
             
 
-            <code class="ruby">        @user=User.new(&quot;Juan&quot;)</code>
+            <code class="ruby">        @juego=Game.new(@user,15)</code>
           </li>
         </div>
       
@@ -4494,7 +6679,7 @@
 
             
 
-            <code class="ruby">        @juego=Game.new(@user,15)</code>
+            <code class="ruby">        @cod=@juego.setCodeColorsToInt(&quot;SOBOLORO&quot;)</code>
           </li>
         </div>
       
@@ -4505,7 +6690,7 @@
 
             
 
-            <code class="ruby">        @cod=@juego.setCodeColorsToInt(&quot;FFFFFFFF&quot;)</code>
+            <code class="ruby">        @juego.setCode(@cod)</code>
           </li>
         </div>
       
@@ -4516,23 +6701,12 @@
 
             
 
-            <code class="ruby">        @juego.setCode(@cod)</code>
+            <code class="ruby">        expect(@juego.getCode()).to eq(97370717)</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="191">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">        expect(@juego.getCode()).to eq(88888888)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="192">
+          <li class="never" data-hits="" data-linenumber="191">
             
             
 
@@ -4543,29 +6717,18 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="193">
-            
-            
-
-            
-
-            <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="194">
+          <li class="covered" data-hits="1" data-linenumber="192">
             <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">    it &#39;comprobacion de codigo enteros a colores&#39; do</code>
+            <code class="ruby">    it &#39;comprobacion de codigo de colores correcta3&#39; do</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="195">
+          <li class="covered" data-hits="1" data-linenumber="193">
             <span class="hits">1</span>
             
 
@@ -4576,13 +6739,35 @@
         </div>
       
         <div>
+          <li class="covered" data-hits="1" data-linenumber="194">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">        @juego=Game.new(@user,15)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="195">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">        @cod=@juego.setCodeColorsToInt(&quot;FFFFFFFF&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
           <li class="covered" data-hits="1" data-linenumber="196">
             <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">        @juego=Game.new(@user,15,1234567890)</code>
+            <code class="ruby">        @juego.setCode(@cod)</code>
           </li>
         </div>
       
@@ -4593,23 +6778,12 @@
 
             
 
-            <code class="ruby">        @contrasena=@juego.getCodeIntToColors()        </code>
+            <code class="ruby">        expect(@juego.getCode()).to eq(88888888)</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="198">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">        expect(@contrasena).to eq(&quot;RYBGWPOFSL&quot;)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="199">
+          <li class="never" data-hits="" data-linenumber="198">
             
             
 
@@ -4620,13 +6794,24 @@
         </div>
       
         <div>
+          <li class="never" data-hits="" data-linenumber="199">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
           <li class="covered" data-hits="1" data-linenumber="200">
             <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">    it &#39;devolver invitacion&#39; do</code>
+            <code class="ruby">    it &#39;comprobacion de codigo enteros a colores&#39; do</code>
           </li>
         </div>
       
@@ -4648,7 +6833,7 @@
 
             
 
-            <code class="ruby">        @juego=Game.new(@user)</code>
+            <code class="ruby">        @juego=Game.new(@user,15,1234567890)</code>
           </li>
         </div>
       
@@ -4659,18 +6844,18 @@
 
             
 
-            <code class="ruby">        expect(@juego.getInvitationCode().size).to eq(4)</code>
+            <code class="ruby">        @contrasena=@juego.getCodeIntToColors()        </code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="204">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="204">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">    end</code>
+            
+
+            <code class="ruby">        expect(@contrasena).to eq(&quot;RYBGWPOFSL&quot;)</code>
           </li>
         </div>
       
@@ -4681,12 +6866,122 @@
 
             
 
-            <code class="ruby">    </code>
+            <code class="ruby">    end</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="206">
+          <li class="covered" data-hits="1" data-linenumber="206">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    it &#39;devolver invitacion&#39; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="207">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">        @user=User.new(&quot;Juan&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="208">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">        @juego=Game.new(@user)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="209">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">        expect(@juego.getInvitationCode().size).to eq(4)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="210">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="211">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    it &quot;deberia devolver true al ser dos palabras del mismo tamaño&quot; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="212">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">        @user=User.new(&quot;Juan&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="213">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">        @juego=Game.new(@user)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="214">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">        expect(@juego.sameSize(&quot;4565&quot;,&quot;1111&quot;)).to eq(true)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="215">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="216">
             
             
 

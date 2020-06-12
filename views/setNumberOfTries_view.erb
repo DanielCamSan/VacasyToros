@@ -1,4 +1,3 @@
-
 <head>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -6,7 +5,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600&display=swap" rel="stylesheet">
 
     <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
-    <title>game</title>
+    <title>select dificultad</title>
 </head>
 <body class="alert alert-primary" role="alert"
 style="background-image: url(https://image.freepik.com/vector-gratis/granja-animales-toros-vacas_18591-62481.jpg);
@@ -17,17 +16,13 @@ style="background-image: url(https://image.freepik.com/vector-gratis/granja-anim
     <div > 
         <h1 class="text-primary">Vacas y Toros Game</h1>
 
-
-        <form method="post" action="enterNumber">
-            <h3 class="text-secondary"> Guess the code:<h3>
-            <input type="number" id="guessCode" name="guessCode" placeholder="Enter the code"> 
-            <input type="submit" class="btn btn-success" value="¡Guess!"> 
-        </form>
-
-        <form method="post" action="giveup">
-            <input type="submit" class="btn btn-danger" value="Rendirse">
+        <form method="post" action="GuessCode">
+        <h3 class="text-secondary"> Enter the number of tries or leave it blank and we put 10 tries<h3>
+        <input type="number"  name="tries" placeholder="ej: 10">
+        <input type="submit" class="btn btn-danger" value="set Tries">
+        
         </form>
         
-
+        
     </div>
 </body>

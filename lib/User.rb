@@ -7,7 +7,7 @@ class User
     end
     def setNickname(nick)
         if nick==""
-            nick=getName()+(rand(100)).to_s
+            nick=getName()+(rand(90)+10).to_s
         end
         @nickName=nick
     end

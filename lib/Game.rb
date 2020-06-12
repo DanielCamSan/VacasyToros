@@ -76,7 +76,7 @@ class Game
     end
     def validateNumbers(num)
         code = getCode().to_s
-        if (num.to_s.size==0)
+        if (num.to_s==' ')
             return "No puede ser vacio el numero" 
         end        
         if ( ((num.to_i).to_s.size == num.to_s.size) && ((code.to_i).to_s.size == code.size) )

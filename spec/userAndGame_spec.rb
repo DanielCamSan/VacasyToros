@@ -65,6 +65,12 @@ RSpec.describe "Creacion" do
         @juego.setCode(123)
         expect(@juego.validateNumbers(5464)).to eq("Los numeros tienen tamaños distintos")
     end
+    it 'devuelve espacio no puede ser vacio' do
+        @user=User.new("Juan")
+        @juego=Game.new(@user)
+        @juego.setCode(123)
+        expect(@juego.validateNumbers(' ')).to eq("No puede ser vacio el numero")
+    end
     it 'devuelve no puede tener letras al validar el codigo' do
         @user=User.new("Juan")
         @juego=Game.new(@user)
@@ -122,7 +128,7 @@ RSpec.describe "Creacion" do
     it 'devuelve el tamaño del nickname que se le creo manualmente vacio' do
         @user=User.new("Juan")
         @user.setNickname("")
-        expect(@user.getNickname().size).to eq(6)
+        expect(@user.getNickname().size).to eq(6 )
     end
 
     it'devolver numero de intento establecidos en este caso 15' do 
@@ -202,5 +208,9 @@ RSpec.describe "Creacion" do
         @juego=Game.new(@user)
         expect(@juego.getInvitationCode().size).to eq(4)
     end
-    
+    it "deberia devolver true al ser dos palabras del mismo tamaño" do
+        @user=User.new("Juan")
+        @juego=Game.new(@user)
+        expect(@juego.sameSize("4565","1111")).to eq(true)
+    end
 end

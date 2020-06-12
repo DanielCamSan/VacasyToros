@@ -9,15 +9,16 @@
 </head>
 <body class="alert alert-primary" role="alert">
     <div>
-    <h1 class="text-primary">  Enter to the Game </h1>    
-    <form method="post" action="confirm">
-        <h3 class="text-secondary"> Enter your name <h2>
-        <input type="string"  name="name">
-        <h3 class="text-secondary"> Enter your nickname or leave it blank and we will give you one<h3>
-        <input type="string"  name="nickname">
-        <input type="submit" class="btn btn-danger" value="login">
+    <h1 class="text-primary">Vacas y Toros Game</h1>
+    <form method="post" action="verifySizeCode">
+   
+        <label class="text-secondary"><%= "Enter a code of size "+ @codeDif%></label>
+        <input type="number" id="codigo" name="codigo"> 
+        <input type="submit" class="btn btn-primary" value="Set code">
+        
+    </form>
+    <form method="post" action="setRandomCode">
+        <input type="submit" class="btn btn-warning" value="<%="Generate size "+ @codeDif+" random code"%> ">  
     </form>
     </div>
-
 </body>
-<
