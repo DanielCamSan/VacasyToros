@@ -13,6 +13,16 @@ RSpec.describe "Creacion" do
         @user=User.new("JUAN")
         expect(@user.getName()).to eq('JUAN')
     end
+    it 'devuelve nombre que ingresa manualmente ' do
+        @user=User.new()
+        @user.setName("JUAN")
+        expect(@user.getName()).to eq('JUAN')
+    end
+    it 'devuelve nombre Guest que ingresa manualmente ' do
+        @user=User.new()
+        @user.setName("")
+        expect(@user.getName()).to eq('Guest')
+    end
     it 'devuelve el codigo para ver que se ingreso correctamente' do
         @juego=Game.new()
         @juego.setCode(123)
@@ -101,6 +111,12 @@ RSpec.describe "Creacion" do
         expect(@user.getNickname()).to eq("NickName")
     end
 
+    it 'devuelve el tamaño del nickname que se le creo manualmente vacio' do
+        @user=User.new("Juan")
+        @user.setNickname("")
+        expect(@user.getNickname().size).to eq(6)
+    end
+
     it'devolver numero de intento establecidos en este caso 15' do 
         @juego=Game.new()
         @juego.setIntentos(15)
@@ -133,6 +149,18 @@ RSpec.describe "Creacion" do
         @juego.setRandomCode()
         expect(@juego.sizeOfCode()).to eq("4")
     end
+    it 'devolver password aleatoria tam6' do
+        @user=User.new("Juan")
+        @juego=Game.new(@user)
+        @juego.setRandomCodeSix()
+        expect(@juego.sizeOfCode()).to eq("6")
+    end
+    it 'devolver password aleatoria tam8' do
+        @user=User.new("Juan")
+        @juego=Game.new(@user)
+        @juego.setRandomCodeEight()
+        expect(@juego.sizeOfCode()).to eq("8")
+    end
     it 'comprobacion de codigo de colores correcta' do
         @user=User.new("Juan")
         @juego=Game.new(@user,15)
@@ -160,6 +188,11 @@ RSpec.describe "Creacion" do
         @juego=Game.new(@user,15,1234567890)
         @contrasena=@juego.getCodeIntToColors()        
         expect(@contrasena).to eq("RYBGWPOFSL")
+    end
+    it 'devolver invitacion' do
+        @user=User.new("Juan")
+        @juego=Game.new(@user)
+        expect(@juego.getInvitationCode().size).to eq(4)
     end
     
 end
