@@ -1,14 +1,10 @@
-
 class User
-
     def initialize (name="",nickname="",email="",password="")
         @name=name
         @nickName=nickname
         @email=email
         @password=password
     end
-    
-
     def setNickname(nick)
         if nick==""
             nick=getName()+(rand(100)).to_s
@@ -33,23 +29,16 @@ class User
     def getTipo()
         return @tipo
     end
-    
     def getEmail()
         return @email
     end
-
     def setEmail(email)
         @email=email
     end
-    
     def setPassword(password)
        @password=password
     end
-
     def getPassword()
         return @password
     end
-     
 end
-
-

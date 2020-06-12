@@ -4,9 +4,7 @@ require './lib/Game.rb'
 
 @@juego=Game.new()
 @@user = User.new()
-
 @@dif=0
-
 
 get '/' do
   erb:home_view
@@ -20,7 +18,6 @@ get '/login-cuenta' do
   
   erb:accountLogin_view
 end
-
 
 post '/confirm' do
    @@user.setName(params[:name])
@@ -41,15 +38,24 @@ get '/codeInvitePeople' do
   erb:invitation_view
 end
 
+post '/putInvitation' do
+  erb:game_view
+end
+
 
 
 get '/menuStarGame' do
-  erb:SeleccionType_view
+  erb:selectTypeCode_view
 end
 
 get '/SelectType1' do
   erb:codeDificulty_view
-  
+end
+get '/menuNumber' do
+  erb:SeleccionType_view
+end
+get '/menuColors' do
+  erb:selectTypeColors_view
 end
 
 get '/SelectType2' do
@@ -66,13 +72,22 @@ end
 post '/enterCodigoPer' do
   @codigo = params[:codigo]
   @codigoS=@codigo.to_s
-  if(@codigoS.size!=@@dif)
+  @code=@codigoS.size
+  if(@code!=@@dif)
+    @difS=@@dif.to_s
+    @codeS=@code.to_s
     erb:errorSize_view
   else
     @@juego.setCode(@codigo)
     erb:dificultad_view
   end
 end
+
+post '/correctCode' do
+  @codeDif=@@dif.to_s
+  erb:DifficultySelection_view
+end
+
 
 post '/enterNumber' do
   @result=@@juego.validateNumbers(params[:guessCode])

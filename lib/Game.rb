@@ -5,11 +5,9 @@ class Game
         @intentos = intentos
         @codigo = codigo
     end
-
     def getIntentos()
         return @intentos
     end
- 
     def setRandomCode()
         @numRand=(rand(9).to_i+1)*1+(rand(9).to_i+1)*10+(rand(9).to_i+1)*100+(rand(9).to_i+1)*1000
         @codigo=@numRand.to_i
@@ -49,8 +47,6 @@ class Game
     def getCode() 
         return @codigo
     end
-
-
     def setCode(numbercodigo)
         if(numbercodigo!="")
             @codigo = numbercodigo
@@ -78,8 +74,6 @@ class Game
         descontarIntentos()
         return "#{toros} toros y #{vacas} vacas"        
     end
-
-
     def validateNumbers(num)
         code = getCode().to_s
         if (num.to_s.size==0)
@@ -128,14 +122,14 @@ class Game
             end 
         end
         cod=cod.to_i
-        @codigo=cod
+        return cod
     end
-    def getCodeIntToColors(colorCode)
+    def getCodeIntToColors()
         #1:R-Red     2:Y-Yellow   3:B-Blue     4:G-Green  5:W-White
         #6:P-Purple  7:O-Orange   8:F-Fuchsia  9:S-Silver 0:L-Lime
-        colorCode=colorCode.to_s
+        colorCode=@codigo.to_s
         cod=""
-        for i in (0...colorCode.size-1) do
+        for i in (0...colorCode.size) do
             case colorCode[i]
                 when "1"
                     cod=cod+"R"

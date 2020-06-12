@@ -136,8 +136,30 @@ RSpec.describe "Creacion" do
     it 'comprobacion de codigo de colores correcta' do
         @user=User.new("Juan")
         @juego=Game.new(@user,15)
-        @juego.setCodeColorsToInt("RYBGWPOFSL")
+        @cod=@juego.setCodeColorsToInt("RYBGWPOFSL")
+        @juego.setCode(@cod)
         expect(@juego.getCode()).to eq(1234567890)
     end
+    it 'comprobacion de codigo de colores correcta2' do
+        @user=User.new("Juan")
+        @juego=Game.new(@user,15)
+        @cod=@juego.setCodeColorsToInt("SOBOLORO")
+        @juego.setCode(@cod)
+        expect(@juego.getCode()).to eq(97370717)
+    end
+    it 'comprobacion de codigo de colores correcta3' do
+        @user=User.new("Juan")
+        @juego=Game.new(@user,15)
+        @cod=@juego.setCodeColorsToInt("FFFFFFFF")
+        @juego.setCode(@cod)
+        expect(@juego.getCode()).to eq(88888888)
+    end
 
+    it 'comprobacion de codigo enteros a colores' do
+        @user=User.new("Juan")
+        @juego=Game.new(@user,15,1234567890)
+        @contrasena=@juego.getCodeIntToColors()        
+        expect(@contrasena).to eq("RYBGWPOFSL")
+    end
+    
 end
