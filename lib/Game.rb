@@ -98,15 +98,12 @@ class Game
     def rendirse()
         @intentos=0
     end
-
-
-
-    def setCodeColors(colorCode)
+    def setCodeColorsToInt(colorCode)
         #1:R-Red     2:Y-Yellow   3:B-Blue     4:G-Green  5:W-White
         #6:P-Purple  7:O-Orange   8:F-Fuchsia  9:S-Silver 0:L-Lime
         colorCode=colorCode.to_s
         cod=""
-        for i in (0...colorCode.size-1) do
+        for i in (0...colorCode.size) do
             case colorCode[i]
                 when "R"
                     cod=cod+"1"
@@ -130,8 +127,10 @@ class Game
                     cod=cod+"0"
             end 
         end
+        cod=cod.to_i
+        @codigo=cod
     end
-    def getCodeColors(colorCode)
+    def getCodeIntToColors(colorCode)
         #1:R-Red     2:Y-Yellow   3:B-Blue     4:G-Green  5:W-White
         #6:P-Purple  7:O-Orange   8:F-Fuchsia  9:S-Silver 0:L-Lime
         colorCode=colorCode.to_s
@@ -154,13 +153,12 @@ class Game
                     cod=cod+"O"
                 when "8"
                     cod=cod+"F"
-                when "S"
-                    cod=cod+"9"
-                when "L"
-                    cod=cod+"0"
+                when "9"
+                    cod=cod+"S"
+                when "0"
+                    cod=cod+"L"
             end 
         end
+        return cod
     end
-
-
 end

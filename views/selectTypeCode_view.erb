@@ -9,16 +9,12 @@
 </head>
 <body class="alert alert-primary" role="alert">
     <div>
-    <h1 class="text-primary">Vacas y Toros Game</h1>
-    <form method="post" action="enterCodigoPer">
-   
-        <label class="text-secondary"><%= "Enter a size code of "+ @codeDif%></label>
-        <input type="number" id="codigo" name="codigo"> 
-        <input type="submit" class="btn btn-primary" value="Set code">
-        
+    <h1 class="text-success">Select type of game: </h1>
+    <form action="codeInvitePeople">
+        <input type="submit" class="btn btn-warning" value="Play with colors" />
     </form>
-    <form method="post" action="RandomizarPer">
-        <input type="submit" class="btn btn-warning" value="<%="Generate size "+ @codeDif+" random code"%> ">  
+    <form action="menuStarGame">
+        <input type="submit" class="btn btn-danger" value="Play with numbers" />
     </form>
     </div>
 </body>

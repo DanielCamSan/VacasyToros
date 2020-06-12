@@ -133,10 +133,11 @@ RSpec.describe "Creacion" do
         @juego.setRandomCode()
         expect(@juego.sizeOfCode()).to eq("4")
     end
-    it 'devolver resouesta metodo' do
+    it 'comprobacion de codigo de colores correcta' do
         @user=User.new("Juan")
-        @juego=Game.new(@user,15,187)
-        @pal=@juego.play(129)
-        expect(@pal).to eq(1)
+        @juego=Game.new(@user,15)
+        @juego.setCodeColorsToInt("RYBGWPOFSL")
+        expect(@juego.getCode()).to eq(1234567890)
     end
+
 end

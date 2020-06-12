@@ -68,9 +68,10 @@ post '/enterCodigoPer' do
   @codigoS=@codigo.to_s
   if(@codigoS.size!=@@dif)
     erb:errorSize_view
+  else
+    @@juego.setCode(@codigo)
+    erb:dificultad_view
   end
-  @@juego.setCode(@codigo)
-  erb:dificultad_view
 end
 
 post '/enterNumber' do
