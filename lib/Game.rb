@@ -56,7 +56,11 @@ class Game
     def sizeOfCode()
         return ((@codigo.to_s).size).to_s
     end
- 
+=begin
+    
+rescue => exception
+    
+end
     def play(num) 
         code = getCode().to_s
         toros = 0
@@ -74,6 +78,29 @@ class Game
         descontarIntentos()
         return "#{toros} toros y #{vacas} vacas"        
     end
+=end
+    def play(num) 
+        code = getCode().to_s
+        toros = 0
+        vacas = 0
+        num=num.to_s
+        encontrados = []
+        var=0
+        for i in (0...code.size) do
+            if  (num[i] == code[i])
+                toros += 1
+                encontrados.push(num[i])
+            else
+                if ( code.include?(num[i]) )
+                    if( !encontrados.include?(num[i]))
+                        vacas += 1
+                    end
+                end
+            end 
+        end
+        descontarIntentos()
+        return "#{toros} toros y #{vacas} vacas"        
+    end
     def validateNumbers(num)
         code = getCode().to_s
         if (num.to_s==' ')
@@ -83,10 +110,11 @@ class Game
             if ( (num.to_i).to_s.size == (code.to_i).to_s.size )
                 return play(num)
             else
-                return "Los numeros tienen tamaños distintos"
+                return "El codigo tiene un tamaño distinto"
             end
         else
-            return "El codigo no deberia tener letras"
+            #return "El codigo no deberia tener letras"
+            return play(num)
         end    
     end
     def rendirse()

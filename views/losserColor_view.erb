@@ -1,0 +1,20 @@
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    <title>Perdiste</title>
+</head>
+<body class="alert alert-primary" role="alert">
+    <div>
+        <h1><span style="font-size: 250%; background-color: #FF0000; color: #ffffff; padding: 0 3px; font">¡PERDISTE!</span>
+        </h1>
+        <h2 class="text-primary">Codigo:<span style="font-size: 100%; background-color: #000000; color: #ffffff; padding: 0 3px; font"><%=@codigoColor%></span>
+        </h2>
+        <form action="game2">
+        <input type="submit" class="btn btn-warning" value="Volver a intentar" />
+        </form>
+    </div>
+</body>
