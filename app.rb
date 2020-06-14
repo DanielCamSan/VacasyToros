@@ -118,7 +118,7 @@ post '/GuessCode' do
 end
 
 
-post '/GuessCode' do
+post '/GuessCode1' do
   @result=@@juego.validateNumbers(params[:guessCode])
   @intentos=@@juego.getIntentos()
   @intentosString=@intentos.to_s
