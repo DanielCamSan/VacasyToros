@@ -57,25 +57,8 @@ class Game
         return ((@codigo.to_s).size).to_s
     end
 
-    def play(num) 
-        code = getCode().to_s
-        toros = 0
-        vacas = 0
-        num=num.to_s
-        for i in (0...code.size) do
-            if  (num[i] == code[i])
-                toros += 1
-            else
-                if ( code.include?(num[i]))
-                    vacas += 1
-                end
-            end 
-        end
-        descontarIntentos()
-        return "#{toros} toros y #{vacas} vacas"        
-    end
 
-=begin
+
     def play(num) 
         code = getCode().to_s
         toros = 0
@@ -98,7 +81,7 @@ class Game
         descontarIntentos()
         return "#{toros} toros y #{vacas} vacas"        
     end
-=end
+
     def validateNumbers(num)
         code = getCode().to_s
         if (num.to_s==' ')
