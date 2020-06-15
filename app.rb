@@ -70,8 +70,15 @@ end
 post '/codeDificultyColorPer' do
   erb:setCodeColorPer_view
 end
+post '/setCodeColor' do
+  @colorCode = params[:codigo]
+  @numberCode=@@juego.setCodeColorsToInt(@colorCode)
+  @@juego.setCode(@numberCode)
+  erb:setNumberOfTriesColor_view
+end
 post '/verifySizeCodeColor' do
-  @codigo = params[:codigo]
+  @colorCode = params[:codigo]
+  @codigo=@@juego.setCodeColorsToInt(@colorCode)
   @codigoS=@codigo.to_s
   @code=@codigoS.size
   if(@code!=@@dif)
@@ -89,6 +96,18 @@ post '/correctCodeColor' do
 end
 get '/SelectTypeGuesserColors' do
   erb:guesserCodeColors_view
+end
+post '/setRandomCodeColor' do
+  if(@@dif==8)
+    @@juego.setRandomCodeEight()
+  else
+    if(@@dif==6)
+      @@juego.setRandomCodeSix()
+    else
+      @@juego.setRandomCode()
+    end
+  end
+  erb:setNumberOfTriesColor_view
 end
 
 post '/GuessCodeColors' do
@@ -114,7 +133,20 @@ post '/GuessCodeColors' do
   end
 end
 
+post '/giveupColor' do
+  @@juego.rendirse()
+  @codigoColor = @@juego.getCodeIntToColors()
+  @@juego.setCode(1234)
+  erb:losserColor_view
+end
 
+post '/gameColor2' do
+  erb:guesserCodeColors_view
+end
+
+get '/gameColor' do
+  erb:guesserCodeColors_view
+end
 get '/SelectTypeGenerator' do
   erb:setCodeDificulty_view
 end
@@ -173,7 +205,6 @@ post '/setRandomCode' do
   end
   erb:setNumberOfTries_view
 end
-
 post '/setCode' do
   @codigo = params[:codigo]
   @@juego.setCode(@codigo)
@@ -205,27 +236,12 @@ post '/GuessCodeNumbers' do
     end      
   end
 end
-post '/gameColor2' do
-  erb:guesserCodeColors_view
-end
-
-get '/gameColor' do
-  erb:guesserCodeColors_view
-end
 post '/giveup' do
   @@juego.rendirse()
   @codigo = @@juego.getCode()
   @@juego.setCode(1234)
   erb:losser_view
 end
-
-post '/giveupColor' do
-  @@juego.rendirse()
-  @colorCode = @@juego.getCodeIntToColors()
-  @@juego.setCode(1234)
-  erb:losserColor_view
-end
-
 get '/game' do
   erb:guesserCode_view
 end

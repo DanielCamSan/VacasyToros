@@ -63,19 +63,13 @@ RSpec.describe "Creacion" do
         @user=User.new("Juan")
         @juego=Game.new(@user)
         @juego.setCode(123)
-        expect(@juego.validateNumbers(5464)).to eq("Los numeros tienen tamaños distintos")
+        expect(@juego.validateNumbers(5464)).to eq("El codigo tiene un tamaño distinto")
     end
     it 'devuelve espacio no puede ser vacio' do
         @user=User.new("Juan")
         @juego=Game.new(@user)
         @juego.setCode(123)
         expect(@juego.validateNumbers(' ')).to eq("No puede ser vacio el numero")
-    end
-    it 'devuelve no puede tener letras al validar el codigo' do
-        @user=User.new("Juan")
-        @juego=Game.new(@user)
-        @juego.setCode(123)
-        expect(@juego.validateNumbers("546f4")).to eq("El codigo no deberia tener letras")
     end
     it 'devuelve  el codigo por defecto' do
         @juego=Game.new()

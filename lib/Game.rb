@@ -56,11 +56,7 @@ class Game
     def sizeOfCode()
         return ((@codigo.to_s).size).to_s
     end
-=begin
-    
-rescue => exception
-    
-end
+
     def play(num) 
         code = getCode().to_s
         toros = 0
@@ -78,7 +74,8 @@ end
         descontarIntentos()
         return "#{toros} toros y #{vacas} vacas"        
     end
-=end
+
+=begin
     def play(num) 
         code = getCode().to_s
         toros = 0
@@ -101,6 +98,7 @@ end
         descontarIntentos()
         return "#{toros} toros y #{vacas} vacas"        
     end
+=end
     def validateNumbers(num)
         code = getCode().to_s
         if (num.to_s==' ')
@@ -113,7 +111,6 @@ end
                 return "El codigo tiene un tamaño distinto"
             end
         else
-            #return "El codigo no deberia tener letras"
             return play(num)
         end    
     end
