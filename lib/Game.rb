@@ -70,13 +70,14 @@ class Game
             if  (num[i] == code[i])
                 toros += 1
                 encontrados.push(num[i])
-            else
-                if ( code.include?(num[i]) )
-                    if( !encontrados.include?(num[i]))
-                        vacas += 1
-                    end
+            end
+        end
+        for i in (0...code.size) do
+            if ( code.include?(num[i]) )
+                if( !encontrados.include?(num[i]))
+                    vacas += 1
                 end
-            end 
+            end
         end
         descontarIntentos()
         return "#{toros} toros y #{vacas} vacas"        
