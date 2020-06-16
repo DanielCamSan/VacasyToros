@@ -1,7 +1,7 @@
 {
   "Cucumber Features": {
     "coverage": {
-      "D:/catolica 2020/ing soft/ProyectoVacasToros/VacasyToros/app.rb": {
+      "C:/Users/danic/Desktop/5 semestre/Inge Soft/ruby/github/proyecto final/VacasyToros/app.rb": {
         "lines": [
           1,
           1,
@@ -262,7 +262,7 @@
           null
         ]
       },
-      "D:/catolica 2020/ing soft/ProyectoVacasToros/VacasyToros/lib/User.rb": {
+      "C:/Users/danic/Desktop/5 semestre/Inge Soft/ruby/github/proyecto final/VacasyToros/lib/User.rb": {
         "lines": [
           1,
           1,
@@ -310,7 +310,7 @@
           null
         ]
       },
-      "D:/catolica 2020/ing soft/ProyectoVacasToros/VacasyToros/lib/Game.rb": {
+      "C:/Users/danic/Desktop/5 semestre/Inge Soft/ruby/github/proyecto final/VacasyToros/lib/Game.rb": {
         "lines": [
           null,
           1,
@@ -481,7 +481,7 @@
           null
         ]
       },
-      "D:/catolica 2020/ing soft/ProyectoVacasToros/VacasyToros/features/step_definitions/codigo_steps.rb": {
+      "C:/Users/danic/Desktop/5 semestre/Inge Soft/ruby/github/proyecto final/VacasyToros/features/step_definitions/codigo_steps.rb": {
         "lines": [
           1,
           1,
@@ -502,7 +502,7 @@
           null
         ]
       },
-      "D:/catolica 2020/ing soft/ProyectoVacasToros/VacasyToros/features/step_definitions/colores_steps.rb": {
+      "C:/Users/danic/Desktop/5 semestre/Inge Soft/ruby/github/proyecto final/VacasyToros/features/step_definitions/colores_steps.rb": {
         "lines": [
           1,
           1,
@@ -521,7 +521,7 @@
           null
         ]
       },
-      "D:/catolica 2020/ing soft/ProyectoVacasToros/VacasyToros/features/step_definitions/dificultad_steps.rb": {
+      "C:/Users/danic/Desktop/5 semestre/Inge Soft/ruby/github/proyecto final/VacasyToros/features/step_definitions/dificultad_steps.rb": {
         "lines": [
           null,
           null,
@@ -568,7 +568,7 @@
           null
         ]
       },
-      "D:/catolica 2020/ing soft/ProyectoVacasToros/VacasyToros/features/step_definitions/guess_steps.rb": {
+      "C:/Users/danic/Desktop/5 semestre/Inge Soft/ruby/github/proyecto final/VacasyToros/features/step_definitions/guess_steps.rb": {
         "lines": [
           1,
           1,
@@ -586,41 +586,6 @@
           1,
           null,
           null,
-          null,
-          null,
-          1,
-          1,
-          null,
-          null,
-          1,
-          1,
-          null,
-          null,
-          1,
-          1,
-          null,
-          null,
-          1,
-          1,
-          null
-        ]
-      },
-      "D:/catolica 2020/ing soft/ProyectoVacasToros/VacasyToros/features/step_definitions/invitacion_steps.rb": {
-        "lines": [
-          1,
-          1,
-          null,
-          null,
-          null,
-          1,
-          1,
-          null
-        ]
-      },
-      "D:/catolica 2020/ing soft/ProyectoVacasToros/VacasyToros/features/step_definitions/loginAccount_steps.rb": {
-        "lines": [
-          1,
-          1,
           null,
           null,
           1,
@@ -640,7 +605,42 @@
           null
         ]
       },
-      "D:/catolica 2020/ing soft/ProyectoVacasToros/VacasyToros/features/step_definitions/nickName_steps.rb": {
+      "C:/Users/danic/Desktop/5 semestre/Inge Soft/ruby/github/proyecto final/VacasyToros/features/step_definitions/invitacion_steps.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          1,
+          null
+        ]
+      },
+      "C:/Users/danic/Desktop/5 semestre/Inge Soft/ruby/github/proyecto final/VacasyToros/features/step_definitions/loginAccount_steps.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null
+        ]
+      },
+      "C:/Users/danic/Desktop/5 semestre/Inge Soft/ruby/github/proyecto final/VacasyToros/features/step_definitions/nickName_steps.rb": {
         "lines": [
           1,
           1,
@@ -663,7 +663,7 @@
           null
         ]
       },
-      "D:/catolica 2020/ing soft/ProyectoVacasToros/VacasyToros/features/step_definitions/rendirse_steps.rb": {
+      "C:/Users/danic/Desktop/5 semestre/Inge Soft/ruby/github/proyecto final/VacasyToros/features/step_definitions/rendirse_steps.rb": {
         "lines": [
           1,
           1,
@@ -678,7 +678,7 @@
           null
         ]
       },
-      "D:/catolica 2020/ing soft/ProyectoVacasToros/VacasyToros/features/step_definitions/template_steps.rb": {
+      "C:/Users/danic/Desktop/5 semestre/Inge Soft/ruby/github/proyecto final/VacasyToros/features/step_definitions/template_steps.rb": {
         "lines": [
           1,
           0,
@@ -720,7 +720,7 @@
           null
         ]
       },
-      "D:/catolica 2020/ing soft/ProyectoVacasToros/VacasyToros/features/step_definitions/tipoDeJugador_steps.rb": {
+      "C:/Users/danic/Desktop/5 semestre/Inge Soft/ruby/github/proyecto final/VacasyToros/features/step_definitions/tipoDeJugador_steps.rb": {
         "lines": [
           1,
           1,
@@ -736,11 +736,11 @@
         ]
       }
     },
-    "timestamp": 1592272531
+    "timestamp": 1592273871
   },
   "RSpec": {
     "coverage": {
-      "D:/catolica 2020/ing soft/ProyectoVacasToros/VacasyToros/spec/userAndGame_spec.rb": {
+      "C:/Users/danic/Desktop/5 semestre/Inge Soft/ruby/github/proyecto final/VacasyToros/spec/userAndGame_spec.rb": {
         "lines": [
           1,
           1,
@@ -954,7 +954,7 @@
           null
         ]
       },
-      "D:/catolica 2020/ing soft/ProyectoVacasToros/VacasyToros/lib/User.rb": {
+      "C:/Users/danic/Desktop/5 semestre/Inge Soft/ruby/github/proyecto final/VacasyToros/lib/User.rb": {
         "lines": [
           1,
           1,
@@ -1002,7 +1002,7 @@
           null
         ]
       },
-      "D:/catolica 2020/ing soft/ProyectoVacasToros/VacasyToros/lib/Game.rb": {
+      "C:/Users/danic/Desktop/5 semestre/Inge Soft/ruby/github/proyecto final/VacasyToros/lib/Game.rb": {
         "lines": [
           null,
           1,
@@ -1174,6 +1174,6 @@
         ]
       }
     },
-    "timestamp": 1592272521
+    "timestamp": 1592273930
   }
 }

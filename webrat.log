@@ -1678,3 +1678,29 @@ D, [2020-06-15T21:55:31.438238 #14124] DEBUG -- : REQUESTING PAGE: GET /SelectTy
 D, [2020-06-15T21:55:31.451127 #14124] DEBUG -- : REQUESTING PAGE: POST giveup with {} and HTTP headers {"HTTP_REFERER"=>"/SelectTypeGuesser"}
 D, [2020-06-15T21:55:31.499529 #14124] DEBUG -- : REQUESTING PAGE: GET /menuNumber with {} and HTTP headers {}
 D, [2020-06-15T21:55:31.514186 #14124] DEBUG -- : REQUESTING PAGE: GET SelectTypeGuesser with {} and HTTP headers {"HTTP_REFERER"=>"/menuNumber"}
+D, [2020-06-15T21:17:49.215491 #11972] DEBUG -- : REQUESTING PAGE: POST /codeDificultyPer with "codigo=1234" and HTTP headers {}
+D, [2020-06-15T21:17:49.600781 #11972] DEBUG -- : REQUESTING PAGE: POST setCode with {"codigo"=>"12345"} and HTTP headers {"HTTP_REFERER"=>"/codeDificultyPer"}
+D, [2020-06-15T21:17:49.624812 #11972] DEBUG -- : REQUESTING PAGE: GET /setCode with {} and HTTP headers {"HTTP_REFERER"=>"setCode"}
+D, [2020-06-15T21:17:49.645086 #11972] DEBUG -- : REQUESTING PAGE: POST /codeDificultyColorPer with "codigo=RWGY" and HTTP headers {}
+D, [2020-06-15T21:17:49.661013 #11972] DEBUG -- : REQUESTING PAGE: POST setCodeColor with {"codigo"=>"RWGY"} and HTTP headers {"HTTP_REFERER"=>"/codeDificultyColorPer"}
+D, [2020-06-15T21:17:49.709865 #11972] DEBUG -- : REQUESTING PAGE: GET /setCodeColor with {} and HTTP headers {"HTTP_REFERER"=>"setCodeColor"}
+D, [2020-06-15T21:17:49.723202 #11972] DEBUG -- : REQUESTING PAGE: GET /SelectTypeGenerator with {} and HTTP headers {}
+D, [2020-06-15T21:17:49.731265 #11972] DEBUG -- : REQUESTING PAGE: POST codeDificulty4 with {} and HTTP headers {"HTTP_REFERER"=>"/SelectTypeGenerator"}
+D, [2020-06-15T21:17:49.808934 #11972] DEBUG -- : REQUESTING PAGE: GET /SelectTypeGenerator with {} and HTTP headers {}
+D, [2020-06-15T21:17:49.829893 #11972] DEBUG -- : REQUESTING PAGE: POST codeDificulty6 with {} and HTTP headers {"HTTP_REFERER"=>"/SelectTypeGenerator"}
+D, [2020-06-15T21:17:49.869209 #11972] DEBUG -- : REQUESTING PAGE: GET /SelectTypeGenerator with {} and HTTP headers {}
+D, [2020-06-15T21:17:49.873786 #11972] DEBUG -- : REQUESTING PAGE: POST codeDificulty8 with {} and HTTP headers {"HTTP_REFERER"=>"/SelectTypeGenerator"}
+D, [2020-06-15T21:17:50.002219 #11972] DEBUG -- : REQUESTING PAGE: GET /SelectTypeGuesser with {} and HTTP headers {}
+D, [2020-06-15T21:17:50.010583 #11972] DEBUG -- : REQUESTING PAGE: POST GuessCodeNumbers with {"guessCode"=>"1243"} and HTTP headers {"HTTP_REFERER"=>"/SelectTypeGuesser"}
+D, [2020-06-15T21:17:50.044583 #11972] DEBUG -- : REQUESTING PAGE: GET /SelectTypeGuesser with {} and HTTP headers {}
+D, [2020-06-15T21:17:50.061821 #11972] DEBUG -- : REQUESTING PAGE: POST GuessCodeNumbers with {"guessCode"=>"1542"} and HTTP headers {"HTTP_REFERER"=>"/SelectTypeGuesser"}
+D, [2020-06-15T21:17:50.127267 #11972] DEBUG -- : REQUESTING PAGE: GET /InvitePeople with {} and HTTP headers {}
+D, [2020-06-15T21:17:50.360707 #11972] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2020-06-15T21:17:50.567588 #11972] DEBUG -- : REQUESTING PAGE: GET RegisterAccount with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2020-06-15T21:17:50.606121 #11972] DEBUG -- : REQUESTING PAGE: POST RegisterWithAccount with {"email"=>"danics2011@gmail.com", "password"=>"dfqij17516"} and HTTP headers {"HTTP_REFERER"=>"RegisterAccount"}
+D, [2020-06-15T21:17:50.848488 #11972] DEBUG -- : REQUESTING PAGE: GET /RegisterName with {} and HTTP headers {}
+D, [2020-06-15T21:17:50.875934 #11972] DEBUG -- : REQUESTING PAGE: POST confirmName with {"name"=>"victor", "nickname"=>"victorhm2011"} and HTTP headers {"HTTP_REFERER"=>"/RegisterName"}
+D, [2020-06-15T21:17:50.943738 #11972] DEBUG -- : REQUESTING PAGE: GET /SelectTypeGuesser with {} and HTTP headers {}
+D, [2020-06-15T21:17:51.051412 #11972] DEBUG -- : REQUESTING PAGE: POST giveup with {} and HTTP headers {"HTTP_REFERER"=>"/SelectTypeGuesser"}
+D, [2020-06-15T21:17:51.073734 #11972] DEBUG -- : REQUESTING PAGE: GET /menuNumber with {} and HTTP headers {}
+D, [2020-06-15T21:17:51.079744 #11972] DEBUG -- : REQUESTING PAGE: GET SelectTypeGuesser with {} and HTTP headers {"HTTP_REFERER"=>"/menuNumber"}
